@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: var(--font-serif), "Playfair Display", Georgia, serif;
+  --font-georgia: Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-sans), "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+
+  /* Core Project Semantic Color Tokens */
+  --color-primary: #0B4F43;
+  --color-primary-hover: #13695A;
+  --color-primary-dark: #083B32;
+  --color-secondary: #13695A;
+  --color-secondary-hover: #1A7E6C;
+  --color-surface: #EFF3F3;
+  --color-light: #EFF3F3;
+  --color-surface-warm: #fff;
+  --color-cream: #fff;
+  --color-surface-card: #FFFFFF;
+  --color-surface-pill: #E2ECEB;
+  --color-body: #465C59;
+  --color-muted: #465C59;
+  --color-border: rgba(70, 92, 89, 0.15);
+  --color-border-subtle: rgba(70, 92, 89, 0.1);
+  --color-border-dark: rgba(239, 243, 243, 0.15);
+
+  /* Utility aliases for backward compatibility */
+  --color-bg-light: #EFF3F3;
+  --color-bg-dark: #0B4F43;
+  --color-text-body: #465C59;
+  --color-forest-dark: #083B32;
+  --color-forest-primary: #0B4F43;
+  --color-forest-accent: #13695A;
+  --color-forest-hover: #1A7E6C;
+  --color-forest-light: #EFF3F3;
+  --color-forest-border: rgba(70, 92, 89, 0.18);
+  --color-forest-muted: #465C59;
+  --color-forest-pill: #E2ECEB;
+}
+
+:root {
+  --background: #EFF3F3;
+  --foreground: #465C59;
+  --dark-section-bg: #0B4F43;
+  --dark-section-fg: #EFF3F3;
+}
+
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-body);
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: var(--font-sans);
+}
+
+/* Serif font utility for headings */
+.font-serif-heading {
+  font-family: var(--font-serif);
+}
+
+.font-georgia {
+  font-family: var(--font-georgia);
+}
+
+/* Skip Navigation Link for Accessibility & SEO */
+.skip-nav {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  background: #0B4F43;
+  color: #EFF3F3;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  z-index: 9999;
+  font-weight: 600;
+  transition: top 0.2s ease-in-out;
+}
+
+.skip-nav:focus {
+  top: 1rem;
+}
+
+/* Elevated Light Card (Human-Centric UI reference) */
+.human-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(70, 92, 89, 0.12);
+  box-shadow: 0 12px 30px -10px rgba(11, 79, 67, 0.08);
+  border-radius: 1.25rem;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.human-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px -12px rgba(11, 79, 67, 0.14);
+  border-color: rgba(11, 79, 67, 0.25);
+}
+
+/* Elevated Dark Card on Dark Forest Background */
+.human-card-dark {
+  background: #083B32;
+  border: 1px solid rgba(239, 243, 243, 0.14);
+  box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.25);
+  border-radius: 1.25rem;
+  color: #EFF3F3;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.human-card-dark:hover {
+  transform: translateY(-3px);
+  border-color: rgba(239, 243, 243, 0.3);
+  box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.35);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #EFF3F3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C4D7D5;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9DBBB7;
+}
