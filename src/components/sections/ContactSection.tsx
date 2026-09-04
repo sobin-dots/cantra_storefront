@@ -175,7 +175,7 @@ export function ContactSection() {
                         onChange={(e) =>
                           setFormData({ ...formData, fullName: e.target.value })
                         }
-                        className="w-full bg-[#FAFBF9] border border-[#465C59]/20 rounded-xl px-4 py-3 text-sm text-[#0B4F43] placeholder:text-[#465C59]/40 focus:outline-none focus:ring-2 focus:ring-[#0B4F43]/20 focus:border-[#0B4F43] transition-all"
+                        className="w-full  border border-[#465C59]/20 rounded-xl px-4 py-3 text-sm text-[#0B4F43] placeholder:text-[#465C59]/40 focus:outline-none focus:ring-2 focus:ring-[#0B4F43]/20 focus:border-[#0B4F43] transition-all"
                       />
                     </div>
 
@@ -197,7 +197,7 @@ export function ContactSection() {
                         onChange={(e) =>
                           setFormData({ ...formData, workEmail: e.target.value })
                         }
-                        className="w-full bg-[#FAFBF9] border border-[#465C59]/20 rounded-xl px-4 py-3 text-sm text-[#0B4F43] placeholder:text-[#465C59]/40 focus:outline-none focus:ring-2 focus:ring-[#0B4F43]/20 focus:border-[#0B4F43] transition-all"
+                        className="w-full  border border-[#465C59]/20 rounded-xl px-4 py-3 text-sm text-[#0B4F43] placeholder:text-[#465C59]/40 focus:outline-none focus:ring-2 focus:ring-[#0B4F43]/20 focus:border-[#0B4F43] transition-all"
                       />
                     </div>
                   </div>
@@ -222,7 +222,7 @@ export function ContactSection() {
                         onChange={(e) =>
                           setFormData({ ...formData, organisation: e.target.value })
                         }
-                        className="w-full bg-[#FAFBF9] border border-[#465C59]/20 rounded-xl px-4 py-3 text-sm text-[#0B4F43] placeholder:text-[#465C59]/40 focus:outline-none focus:ring-2 focus:ring-[#0B4F43]/20 focus:border-[#0B4F43] transition-all"
+                        className="w-full  border border-[#465C59]/20 rounded-xl px-4 py-3 text-sm text-[#0B4F43] placeholder:text-[#465C59]/40 focus:outline-none focus:ring-2 focus:ring-[#0B4F43]/20 focus:border-[#0B4F43] transition-all"
                       />
                     </div>
 
@@ -246,7 +246,7 @@ export function ContactSection() {
                         onChange={(e) =>
                           setFormData({ ...formData, phone: e.target.value })
                         }
-                        className="w-full bg-[#FAFBF9] border border-[#465C59]/20 rounded-xl px-4 py-3 text-sm text-[#0B4F43] placeholder:text-[#465C59]/40 focus:outline-none focus:ring-2 focus:ring-[#0B4F43]/20 focus:border-[#0B4F43] transition-all"
+                        className="w-full  border border-[#465C59]/20 rounded-xl px-4 py-3 text-sm text-[#0B4F43] placeholder:text-[#465C59]/40 focus:outline-none focus:ring-2 focus:ring-[#0B4F43]/20 focus:border-[#0B4F43] transition-all"
                       />
                     </div>
                   </div>
@@ -268,7 +268,7 @@ export function ContactSection() {
                           onChange={(e) =>
                             setFormData({ ...formData, careSetting: e.target.value })
                           }
-                          className="w-full appearance-none bg-[#FAFBF9] border border-[#465C59]/20 rounded-xl px-4 py-3 text-sm text-[#0B4F43] focus:outline-none focus:ring-2 focus:ring-[#0B4F43]/20 focus:border-[#0B4F43] transition-all cursor-pointer pr-10"
+                          className="w-full appearance-none  border border-[#465C59]/20 rounded-xl px-4 py-3 text-sm text-[#0B4F43] focus:outline-none focus:ring-2 focus:ring-[#0B4F43]/20 focus:border-[#0B4F43] transition-all cursor-pointer pr-10"
                         >
                           <option value="">Select a setting</option>
                           <option value="Residential care home">Residential care home</option>
@@ -298,7 +298,7 @@ export function ContactSection() {
                           onChange={(e) =>
                             setFormData({ ...formData, areaOfInterest: e.target.value })
                           }
-                          className="w-full appearance-none bg-[#FAFBF9] border border-[#465C59]/20 rounded-xl px-4 py-3 text-sm text-[#0B4F43] focus:outline-none focus:ring-2 focus:ring-[#0B4F43]/20 focus:border-[#0B4F43] transition-all cursor-pointer pr-10"
+                          className="w-full appearance-none  border border-[#465C59]/20 rounded-xl px-4 py-3 text-sm text-[#0B4F43] focus:outline-none focus:ring-2 focus:ring-[#0B4F43]/20 focus:border-[#0B4F43] transition-all cursor-pointer pr-10"
                         >
                           <option value="">Select a service</option>
                           <option value="Full platform">Full platform</option>
@@ -331,7 +331,7 @@ export function ContactSection() {
                       onChange={(e) =>
                         setFormData({ ...formData, message: e.target.value })
                       }
-                      className="w-full bg-[#FAFBF9] border border-[#465C59]/20 rounded-xl p-4 text-sm text-[#0B4F43] placeholder:text-[#465C59]/40 focus:outline-none focus:ring-2 focus:ring-[#0B4F43]/20 focus:border-[#0B4F43] resize-none transition-all"
+                      className="w-full  border border-[#465C59]/20 rounded-xl p-4 text-sm text-[#0B4F43] placeholder:text-[#465C59]/40 focus:outline-none focus:ring-2 focus:ring-[#0B4F43]/20 focus:border-[#0B4F43] resize-none transition-all"
                     />
                   </div>
 

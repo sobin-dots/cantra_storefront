@@ -7,7 +7,7 @@ export function HeroZone() {
   return (
     <div className="hero-zone relative bg-surface border-b border-border-subtle" id="top">
       {/* Hero Section Content */}
-      <section className="hero max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-20 lg:pt-14 lg:pb-28">
+      <section className="hero max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-20 lg:pt-28 lg:pb-28">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
           {/* Left Column: Brand Sub-label, H1, Subtitle, Dual CTAs, Checklist */}
           <HeroCopy />
