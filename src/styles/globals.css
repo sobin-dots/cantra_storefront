@@ -2,8 +2,8 @@
 
 @theme {
   --font-serif: var(--font-serif), "Playfair Display", Georgia, serif;
-  --font-georgia: Georgia, "Times New Roman", serif;
-  --font-sans: var(--font-sans), "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-georgia: Georgia, "Playfair Display", serif;
+  --font-sans: var(--font-sans), "Lexend", system-ui, -apple-system, sans-serif;
 
   /* Core Project Semantic Color Tokens */
   --color-primary: #0B4F43;
