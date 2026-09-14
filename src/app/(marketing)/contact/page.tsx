@@ -24,9 +24,18 @@ export default function ContactPage() {
 
       <HeroHeader />
 
-      <div className="pt-28 pb-4">
+      <div className="pt-32 pb-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Breadcrumbs items={breadcrumbItems} />
+          
+          <div className="mt-12 md:mt-16 text-center max-w-3xl mx-auto">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-serif text-[#0B4F43] tracking-tight mb-6">
+              Get in <span className="italic font-normal text-[#13695A]">touch</span>
+            </h1>
+            <p className="text-base sm:text-lg text-[#465C59] leading-relaxed">
+              We're here to help you transform your care management. Reach out to our team with any questions, support requests, or to schedule a personalized demonstration.
+            </p>
+          </div>
         </div>
       </div>
 
