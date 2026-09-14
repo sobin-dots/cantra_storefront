@@ -24,11 +24,13 @@ export default function ContactPage() {
 
       <HeroHeader />
 
-      <div className="pt-32 pb-8">
+      <div className="pt-24 pb-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Breadcrumbs items={breadcrumbItems} />
-          
-          <div className="mt-12 md:mt-16 text-center max-w-3xl mx-auto">
+          <div className="mt-8 md:mt-12 text-center max-w-3xl mx-auto">
+            <div className="flex justify-center mb-6">
+              <Breadcrumbs items={breadcrumbItems} theme="light" />
+            </div>
+            
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-serif text-[#0B4F43] tracking-tight mb-6">
               Get in <span className="italic font-normal text-[#13695A]">touch</span>
             </h1>
