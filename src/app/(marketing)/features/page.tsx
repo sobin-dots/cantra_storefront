@@ -47,27 +47,14 @@ export default function FeaturesPage() {
 
             {/* Right Visual Placeholder */}
             <div className="relative mt-8 lg:mt-0">
-              <div className="bg-[#124C3F] rounded-t-3xl border-t border-x border-white/10 shadow-2xl p-4 w-full h-[400px] relative overflow-hidden flex flex-col">
-                 <div className="flex gap-2 mb-4">
-                   <div className="w-2.5 h-2.5 rounded-full bg-white/20" />
-                   <div className="w-2.5 h-2.5 rounded-full bg-white/20" />
-                   <div className="w-2.5 h-2.5 rounded-full bg-white/20" />
-                 </div>
-                 {/* Fake UI elements */}
-                 <div className="flex-1 bg-[#0A4033] rounded-xl border border-white/5 p-6 flex flex-col gap-4">
-                    <div className="h-6 w-1/3 bg-white/10 rounded" />
-                    <div className="h-24 w-full bg-white/5 rounded-lg" />
-                    <div className="flex gap-4">
-                       <div className="h-32 flex-1 bg-white/5 rounded-lg" />
-                       <div className="h-32 flex-1 bg-white/5 rounded-lg" />
-                    </div>
-                 </div>
+              <div className="rounded-3xl shadow-2xl w-full h-[300px] sm:h-[400px] relative overflow-hidden flex flex-col border border-white/10">
+                 <img src="/images/features-page/Admin - Facility Management.png" alt="Cantra App Dashboard" className="w-full h-full object-cover object-left-top" />
               </div>
               
               {/* Overlapping floating banner */}
-              <div className="absolute -bottom-6 -left-6 -right-6 lg:-left-12 lg:right-12 bg-[#E6E8DB] text-[#0A4033] p-6 rounded-xl shadow-xl flex justify-between items-center border border-[#D5D8C6]">
-                <span className="text-[10px] font-bold uppercase tracking-widest text-[#0A4033]/60">ONE CONNECTED PLATFORM</span>
-                <span className="font-serif font-bold text-lg max-w-[200px] text-right leading-tight">Information ready for the next decision.</span>
+              <div className="absolute -bottom-6 -left-2 -right-2 lg:-left-12 lg:-right-4 bg-[#E6E8DB] text-[#0A4033] p-4 sm:p-6 rounded-xl shadow-xl flex justify-between items-center border border-[#D5D8C6] z-20">
+                <span className="text-[10px] font-bold uppercase tracking-widest text-[#0A4033]/60 hidden sm:block">ONE CONNECTED PLATFORM</span>
+                <span className="font-serif font-bold text-base sm:text-lg max-w-[200px] text-right leading-tight ml-auto">Information ready for the next decision.</span>
               </div>
             </div>
           </div>
@@ -111,14 +98,18 @@ export default function FeaturesPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
             
             {/* Card 1: Large Left */}
-            <div className="lg:col-span-5 bg-[#0A4033] rounded-[32px] p-10 lg:p-12 text-white flex flex-col justify-between min-h-[500px] relative overflow-hidden group">
+            <div className="lg:col-span-5 bg-[#0A4033] rounded-[32px] p-10 lg:p-12 text-white flex flex-col min-h-[500px] relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
               
-              <div className="flex justify-between items-start relative z-10">
+              <div className="flex justify-between items-start relative z-10 mb-8">
                 <span className="text-xs font-mono text-white/50">01</span>
                 <div className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-white group-hover:text-[#0A4033] transition-colors">
                   <ArrowUpRight className="w-4 h-4" />
                 </div>
+              </div>
+              
+              <div className="relative z-10 flex-1 w-full rounded-2xl overflow-hidden mb-8 border border-white/10 shadow-inner bg-[#124C3F]">
+                <img src="/images/features-page/Admin - Facility Management.png" alt="Care Management Dashboard" className="w-full h-full object-cover object-left-top opacity-90 group-hover:opacity-100 transition-opacity" />
               </div>
               
               <div className="relative z-10 mt-auto">
@@ -290,22 +281,8 @@ export default function FeaturesPage() {
             </div>
 
             {/* Right Visual */}
-            <div className="bg-[#E7EFEA] rounded-[40px] aspect-square relative overflow-hidden flex items-center justify-center p-8">
-               {/* Abstract rings */}
-               <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/3 w-[120%] aspect-square rounded-full border-[40px] border-white/40" />
-               <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-[80%] aspect-square rounded-full border-[40px] border-white/60" />
-               
-               <div className="w-full bg-white/60 backdrop-blur-md rounded-2xl border border-white p-6 shadow-sm relative z-10">
-                 <div className="flex justify-between text-[10px] font-bold uppercase tracking-widest text-[#0A4033]/60 mb-8 border-b border-[#0A4033]/10 pb-4">
-                   <span>INCIDENT IN CONTEXT</span>
-                   <span>From first signal to final review</span>
-                 </div>
-                 <div className="space-y-4">
-                   <div className="h-4 w-3/4 bg-[#0A4033]/10 rounded" />
-                   <div className="h-4 w-1/2 bg-[#0A4033]/10 rounded" />
-                   <div className="h-16 w-full bg-[#0A4033]/5 rounded-lg mt-4" />
-                 </div>
-               </div>
+            <div className="bg-[#E7EFEA] rounded-[40px] aspect-square relative overflow-hidden flex items-center justify-center shadow-inner border border-[#0A4033]/5 group">
+               <img src="/images/features-page/Group 30.png" alt="Incident in Context" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" />
             </div>
 
           </div>
@@ -333,10 +310,10 @@ export default function FeaturesPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
-              { num: "01", eyebrow: "SPACE AT A GLANCE", title: "Know where every bed stands.", desc: "See your occupancy and bed availability in one place, so you always have an up-to-date view of your home." },
-              { num: "02", eyebrow: "A FAMILIAR STRUCTURE", title: "Mirror the way your home is organised.", desc: "Set up your units, wings, rooms and beds to match your care home, making it easier for your team to find the information they need." }
+              { num: "01", eyebrow: "SPACE AT A GLANCE", title: "Know where every bed stands.", desc: "See your occupancy and bed availability in one place, so you always have an up-to-date view of your home.", img: "/images/features-page/man-nurse-retirement-home.jpg" },
+              { num: "02", eyebrow: "A FAMILIAR STRUCTURE", title: "Mirror the way your home is organised.", desc: "Set up your units, wings, rooms and beds to match your care home, making it easier for your team to find the information they need.", img: "/images/features-page/senior-woman-smiling-with-caretaker.jpeg" }
             ].map((item) => (
-              <div key={item.num} className="bg-white rounded-[32px] p-8 lg:p-12 shadow-sm flex flex-col h-full">
+              <div key={item.num} className="bg-white rounded-[32px] p-8 lg:p-12 shadow-sm flex flex-col h-full group">
                 <div className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#0A4033]/60 mb-4">
                   {item.num} / {item.eyebrow}
                 </div>
@@ -346,8 +323,10 @@ export default function FeaturesPage() {
                 <p className="text-[#0A4033]/70 leading-relaxed mb-10 max-w-sm">
                   {item.desc}
                 </p>
-                {/* Visual Placeholder inside the card */}
-                <div className="mt-auto bg-[#F5F5F5] rounded-2xl w-full h-[240px] border border-[#E0E0E0]" />
+                {/* Real Image */}
+                <div className="mt-auto rounded-2xl w-full h-[240px] border border-[#0A4033]/10 overflow-hidden relative">
+                  <img src={item.img} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" />
+                </div>
               </div>
             ))}
           </div>
