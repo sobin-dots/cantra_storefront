@@ -282,8 +282,8 @@ export default function FeaturesPage() {
             </div>
 
             {/* Right Visual */}
-            <div className="bg-[#E7EFEA] rounded-[40px] aspect-square relative overflow-hidden flex items-center justify-center shadow-inner border border-[#0A4033]/5 group">
-               <img src="/images/features-page/Group 30.png" alt="Incident in Context" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" />
+            <div className="bg-[#E7EFEA] rounded-[40px] aspect-square relative flex items-center justify-center shadow-inner border border-[#0A4033]/5 group p-8 sm:p-12">
+               <img src="/images/features-page/Group 30.png" alt="Incident in Context" className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700 ease-in-out" />
             </div>
 
           </div>
