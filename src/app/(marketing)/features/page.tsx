@@ -231,25 +231,25 @@ export default function FeaturesPage() {
       </section>
 
       {/* SECTION 4: From Incident to Resolutions */}
-      <section className="py-24 lg:py-32 bg-white">
+      <section className="py-24 lg:py-32 bg-[#0A4033] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
             
             {/* Left Content */}
             <div>
-              <div className="flex items-center gap-4 text-[10px] font-bold uppercase tracking-[0.2em] text-[#0A4033]/60 mb-6">
-                <span className="w-8 h-[1px] bg-[#0A4033]/30" />
+              <div className="flex items-center gap-4 text-[10px] font-bold uppercase tracking-[0.2em] text-white/60 mb-6">
+                <span className="w-8 h-[1px] bg-white/30" />
                 FROM INCIDENT TO RESOLUTIONS
               </div>
-              <h2 className="text-4xl lg:text-5xl font-bold font-serif leading-tight text-[#0A4033] mb-6">
+              <h2 className="text-4xl lg:text-5xl font-bold font-serif leading-tight text-white mb-6">
                 Don't let important <br />
-                <span className="italic font-normal">issues get lost.</span>
+                <span className="italic font-normal text-[#B5D5C5]">issues get lost.</span>
               </h2>
-              <p className="text-[#0A4033]/70 leading-relaxed mb-12 text-lg">
+              <p className="text-white/80 leading-relaxed mb-12 text-lg">
                 When something happens in your home, Cantra helps you record it, respond to it, assign responsibility and follow it through to completion.
               </p>
 
-              <div className="relative pl-6 border-l border-[#0A4033]/10 space-y-10">
+              <div className="relative pl-6 border-l border-white/10 space-y-10">
                 {[
                   { num: "01", title: "See what is happening", desc: "Review incidents and important events in context, instead of piecing information together from different records." },
                   { num: "02", title: "Make ownership clear", desc: "Help the team understand what happens next and who needs to take it forward." },
@@ -257,12 +257,12 @@ export default function FeaturesPage() {
                 ].map((item, idx) => (
                   <div key={item.num} className="relative">
                     {/* The dot on the timeline */}
-                    <div className="absolute -left-[30px] top-1.5 w-2 h-2 rounded-full bg-white border-2 border-[#0A4033]" />
+                    <div className="absolute -left-[30px] top-1.5 w-2 h-2 rounded-full bg-[#0A4033] border-2 border-white" />
                     <div className="flex gap-4">
-                      <span className="text-xs font-mono text-[#0A4033]/40 mt-1">{item.num}</span>
+                      <span className="text-xs font-mono text-white/50 mt-1">{item.num}</span>
                       <div>
-                        <h4 className="text-lg font-bold text-[#0A4033] mb-2">{item.title}</h4>
-                        <p className="text-[#0A4033]/70 text-sm leading-relaxed max-w-sm">{item.desc}</p>
+                        <h4 className="text-lg font-bold text-white mb-2">{item.title}</h4>
+                        <p className="text-white/70 text-sm leading-relaxed max-w-sm">{item.desc}</p>
                       </div>
                     </div>
                   </div>
