@@ -165,35 +165,60 @@ export default async function FeatureDetailPage({ params }: { params: Promise<{ 
       </section>
 
       {/* SECTION: WHY CHOOSE */}
-      <section className="py-24 lg:py-32 bg-white">
+      <section className="py-24 lg:py-32 bg-gradient-to-r from-[#6FB19F] via-[#2D6656] to-[#0A4033]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-2xl mx-auto text-center mb-16">
-             <div className="flex items-center justify-center gap-4 text-[10px] font-bold uppercase tracking-[0.2em] text-[#0A4033]/60 mb-6">
-                <span className="w-8 h-[1px] bg-[#0A4033]/30" />
-                {data.whyChoose.eyebrow}
-                <span className="w-8 h-[1px] bg-[#0A4033]/30" />
-             </div>
-             <h2 className="text-4xl lg:text-5xl font-bold font-serif text-[#0A4033] mb-6">
-               {data.whyChoose.title}
-             </h2>
-             <p className="text-[#0A4033]/70 text-lg">
-               {data.whyChoose.description}
-             </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {data.whyChoose.reasons.map((reason, i) => (
-              <div key={i} className="bg-[#E7EFEA] rounded-3xl p-8 relative overflow-hidden group">
-                <span className="absolute -top-4 -right-4 text-8xl font-serif text-white/30 font-bold opacity-50 select-none group-hover:scale-110 transition-transform">
-                  0{i + 1}
-                </span>
-                <div className="relative z-10">
-                  <h3 className="text-xl font-bold font-serif text-[#0A4033] mb-4">{reason.title}</h3>
-                  <p className="text-[#0A4033]/70 text-sm">{reason.description}</p>
+          
+          <div className="bg-white rounded-[40px] p-8 sm:p-12 lg:p-16 shadow-2xl">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+              
+              {/* Left Column: Image with nestled button */}
+              <div className="lg:col-span-5 relative w-full h-full min-h-[400px]">
+                <img 
+                  src="/images/features-page/therapy-session.jpg" 
+                  alt="Why Choose Feature" 
+                  className="w-full h-full object-cover rounded-[32px] sm:rounded-[40px]"
+                />
+                <div className="absolute bottom-0 left-0 w-16 h-16 sm:w-20 sm:h-20 bg-[#0A4033] rounded-xl flex items-center justify-center text-white shadow-lg -translate-x-2 translate-y-2 sm:-translate-x-4 sm:translate-y-4">
+                  <svg className="w-8 h-8 font-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
+                  </svg>
                 </div>
               </div>
-            ))}
+
+              {/* Right Column: Content */}
+              <div className="lg:col-span-7">
+                <div className="flex items-center gap-4 text-[10px] font-bold uppercase tracking-[0.2em] text-[#0A4033]/60 mb-6">
+                  <span className="w-8 h-[1px] bg-[#0A4033]/30" />
+                  {data.whyChoose.eyebrow}
+                </div>
+                
+                <h2 className="text-4xl lg:text-5xl font-bold font-serif text-[#0A4033] mb-6 leading-[1.2]">
+                  Choose <span className="inline-block bg-[#0A4033] text-white px-4 py-1 rounded-xl mx-1 -translate-y-1">{data.whyChoose.title.replace('Choose ', '').replace(' when clarity matters most.', '')}</span> <br className="hidden sm:block" />
+                  when clarity matters <br className="hidden sm:block" /> most.
+                </h2>
+                
+                <p className="text-[#0A4033]/70 text-sm sm:text-base mb-12 max-w-lg leading-relaxed">
+                  {data.whyChoose.description}
+                </p>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10">
+                  {data.whyChoose.reasons.map((reason, i) => (
+                    <div key={i} className="flex gap-4">
+                      <div className="w-10 h-10 shrink-0 rounded-full border border-[#0A4033]/20 flex items-center justify-center text-xs font-mono text-[#0A4033]/60">
+                        0{i + 1}
+                      </div>
+                      <div>
+                        <h4 className="text-lg font-bold font-serif text-[#0A4033] mb-2">{reason.title}</h4>
+                        <p className="text-xs text-[#0A4033]/60 leading-relaxed">{reason.description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+            </div>
           </div>
+
         </div>
       </section>
 
