@@ -4,6 +4,7 @@ import { HeroHeader } from "@/components/sections/hero/HeroHeader";
 import { SiteFooter } from "@/components/sections/SiteFooter";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 
 export const metadata = constructMetadata({
   title: "Features | Cantra Care",
@@ -12,68 +13,56 @@ export const metadata = constructMetadata({
 });
 
 export default function FeaturesPage() {
+  const breadcrumbItems = [{ name: "Features", url: "/features" }];
+
   return (
     <div className="bg-white text-[#0A4033] min-h-screen font-sans selection:bg-[#0A4033] selection:text-white">
-      {/* Dark green header nav wrapper to match hero */}
-      <div className="bg-[#0A4033]">
-         <HeroHeader />
-      </div>
+      
+      {/* Contact-Style Header Wrapper */}
+      <div className="bg-[#EFF3F3] text-[#465C59]">
+        <HeroHeader />
 
-      {/* HERO SECTION */}
-      <section className="bg-[#0A4033] text-white pt-16 pb-0 overflow-hidden relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center pb-20">
-            {/* Left Content */}
-            <div className="space-y-8">
-              <div className="flex items-center gap-4 text-[10px] font-bold uppercase tracking-[0.2em] text-white/70">
-                <span className="w-8 h-[1px] bg-white/30" />
-                KEEP YOUR TEAM ON TRACK
+        <div className="pt-8 md:pt-16 pb-16 md:pb-24">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-4xl mx-auto">
+              <div className="flex justify-center mb-6">
+                <Breadcrumbs items={breadcrumbItems} theme="light" />
               </div>
-              <h1 className="text-5xl lg:text-7xl font-bold font-serif leading-[1.1] tracking-tight">
-                Run your care home <span className="italic font-normal text-[#B5D5C5]">better, every day.</span>
+
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-serif text-[#0B4F43] tracking-tight mb-6 leading-[1.12]">
+                Keep your team on track. <br className="hidden md:block" />
+                Run your care home <span className="italic font-normal text-[#13695A]">better, every day.</span>
               </h1>
-              <p className="text-lg text-white/80 leading-relaxed max-w-md">
+              
+              <p className="text-lg sm:text-xl text-[#465C59] leading-relaxed max-w-3xl mx-auto mb-10">
                 Cantra brings care planning, medication, staff, incidents, compliance and daily records into one connected platform — so you spend less time chasing information and more time running your home.
               </p>
-              <div className="flex items-center gap-6 pt-4">
-                <Link href="/contact" className="inline-flex items-center gap-2 bg-[#E9EAE5] text-[#0A4033] px-6 py-3 rounded-full text-sm font-bold hover:bg-white transition-colors">
+
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+                <Link
+                  href="/contact"
+                  className="w-full sm:w-auto px-8 py-4 rounded-full bg-[#0B4F43] hover:bg-[#13695A] text-white text-sm font-semibold transition-all duration-200 flex items-center justify-center gap-2 shadow-md hover:shadow-lg"
+                >
                   Book a tailored demo <ArrowUpRight className="w-4 h-4" />
                 </Link>
-                <a href="#day-flow" className="text-sm font-bold text-white/90 hover:text-white flex items-center gap-2 underline underline-offset-4 decoration-white/30 hover:decoration-white transition-all">
+              </div>
+
+              <div className="pt-8 border-t border-[#465C59]/15">
+                <p className="text-xs font-bold uppercase tracking-widest text-[#0B4F43] mb-6">
                   See how Cantra fits into your day ↓
-                </a>
-              </div>
-            </div>
-
-            {/* Right Visual Placeholder */}
-            <div className="relative mt-8 lg:mt-0">
-              <div className="rounded-3xl shadow-2xl w-full h-[300px] sm:h-[400px] relative overflow-hidden flex flex-col border border-white/10">
-                 <img src="/images/features-page/Admin - Facility Management.png" alt="Cantra App Dashboard" className="w-full h-full object-cover object-left-top" />
-              </div>
-              
-              {/* Overlapping floating banner */}
-              <div className="absolute -bottom-6 -left-2 -right-2 lg:-left-12 lg:-right-4 bg-[#E6E8DB] text-[#0A4033] p-4 sm:p-6 rounded-xl shadow-xl flex justify-between items-center border border-[#D5D8C6] z-20">
-                <span className="text-[10px] font-bold uppercase tracking-widest text-[#0A4033]/60 hidden sm:block">ONE CONNECTED PLATFORM</span>
-                <span className="font-serif font-bold text-base sm:text-lg max-w-[200px] text-right leading-tight ml-auto">Information ready for the next decision.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Bottom Bar */}
-        <div className="border-t border-white/10 bg-[#0A4033]/50 backdrop-blur-sm mt-12 lg:mt-0">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col sm:flex-row divide-y sm:divide-y-0 sm:divide-x divide-white/10">
-              {["01 Start informed", "02 Keep care records up to date", "03 Hand over with confidence"].map((item, i) => (
-                <div key={i} className="flex-1 py-6 px-4 text-sm font-medium text-white/80">
-                  <span className="text-white/40 text-xs mr-3 font-mono">{item.split(' ')[0]}</span>
-                  {item.substring(3)}
+                </p>
+                <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-sm font-medium text-[#465C59]">
+                  <a href="#day-flow" className="hover:text-[#0B4F43] transition-colors">01 Start informed</a>
+                  <span className="hidden sm:inline text-[#465C59]/30">|</span>
+                  <a href="#day-flow" className="hover:text-[#0B4F43] transition-colors">02 Keep care records up to date</a>
+                  <span className="hidden sm:inline text-[#465C59]/30">|</span>
+                  <a href="#day-flow" className="hover:text-[#0B4F43] transition-colors">03 Hand over with confidence</a>
                 </div>
-              ))}
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* SECTION 2: Explore the platform */}
       <section className="py-24 lg:py-32 bg-white">
