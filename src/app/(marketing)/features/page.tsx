@@ -372,7 +372,7 @@ export default function FeaturesPage() {
       {/* DEMO CTA */}
       <section className="py-24 lg:py-32 bg-[#F6F4EB]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-[40px] p-12 lg:p-20 shadow-sm border border-[#E0E0E0] grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="bg-white rounded-tl-[48px] rounded-br-[48px] rounded-tr-2xl rounded-bl-2xl p-12 lg:p-20 shadow-[0_8px_30px_rgb(0,0,0,0.04)] grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             
             <div>
               <div className="flex items-center gap-4 text-[10px] font-bold uppercase tracking-[0.2em] text-[#0A4033]/60 mb-6">
@@ -394,10 +394,8 @@ export default function FeaturesPage() {
                 <Link href="/contact" className="inline-flex items-center gap-2 bg-[#0A4033] text-white px-8 py-4 rounded-full text-sm font-bold hover:bg-[#124C3F] transition-colors mb-6 shadow-md">
                   Book a tailored demo <ArrowUpRight className="w-4 h-4" />
                 </Link>
-                <div className="text-sm font-bold text-[#0A4033]/70 font-mono">
+                <div className="text-sm font-bold text-[#0A4033] border-b border-[#0A4033]/20 w-max pb-1">
                   +44 20 7346 0250
-                  <span className="mx-4 text-[#0A4033]/20">|</span>
-                  sales@cantra.com
                 </div>
               </div>
             </div>
@@ -406,27 +404,8 @@ export default function FeaturesPage() {
         </div>
       </section>
 
-      {/* FINAL CTA & FOOTER AREA */}
+      {/* FOOTER AREA */}
       <div className="bg-[#0A4033]">
-        <section className="py-20 lg:py-24 border-b border-white/10">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-8">
-            <div>
-              <div className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/50 mb-4">READY WHEN YOU ARE</div>
-              <h2 className="text-4xl lg:text-5xl font-bold font-serif text-white leading-tight">
-                Bring more clarity <br />
-                to every care day.
-              </h2>
-              <p className="text-white/70 mt-4 max-w-lg">
-                Cantra gives your care team one connected place to manage everyday care, staff, medication and compliance.
-              </p>
-            </div>
-            <Link href="/contact" className="inline-flex shrink-0 items-center gap-2 bg-[#E9EAE5] text-[#0A4033] px-8 py-4 rounded-full text-sm font-bold hover:bg-white transition-colors shadow-xl">
-              Book a tailored demo <ArrowUpRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </section>
-
-        {/* Existing Site Footer */}
         <SiteFooter />
       </div>
       
