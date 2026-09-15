@@ -90,16 +90,16 @@ export default function FeaturesPage() {
             <div className="lg:col-span-5 bg-[#0A4033] rounded-[32px] p-10 lg:p-12 pb-10 text-white flex flex-col min-h-[500px] lg:min-h-[600px] relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
               
-              <div className="flex justify-between items-start relative z-10 mb-8">
-                <span className="text-xs font-mono text-white/50">01</span>
-                <div className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-white group-hover:text-[#0A4033] transition-colors">
-                  <ArrowUpRight className="w-4 h-4" />
+              {/* Edge-to-edge Image wrapper at the top */}
+              <div className="relative z-10 flex-1 min-h-[250px] lg:min-h-[300px] -mt-10 lg:-mt-12 -mx-10 lg:-mx-12 mb-10 overflow-hidden border-b border-white/10 shadow-inner">
+                {/* Overlay Header */}
+                <div className="absolute top-0 left-0 w-full p-10 lg:p-12 flex justify-between items-start z-20 bg-gradient-to-b from-black/50 to-transparent">
+                  <span className="text-xs font-mono text-white/90 drop-shadow-md">01</span>
+                  <div className="w-10 h-10 rounded-full border border-white/30 bg-black/20 backdrop-blur-md flex items-center justify-center hover:bg-white hover:text-[#0A4033] transition-colors shadow-lg">
+                    <ArrowUpRight className="w-4 h-4" />
+                  </div>
                 </div>
-              </div>
-              
-              {/* Edge-to-edge Image wrapper */}
-              <div className="relative z-10 flex-1 -mx-10 lg:-mx-12 mb-10 overflow-hidden border-y border-white/10 bg-[#124C3F] shadow-inner">
-                <img src="/images/features-page/Admin - Facility Management.png" alt="Care Management Dashboard" className="w-full h-full object-cover object-left-top opacity-90 group-hover:opacity-100 transition-opacity" />
+                <img src="/images/features-page/therapy-session.jpg" alt="Care Management Therapy Session" className="w-full h-full object-cover object-center opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" />
               </div>
               
               <div className="relative z-10 mt-auto">
