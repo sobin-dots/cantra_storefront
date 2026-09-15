@@ -98,7 +98,7 @@ export default function FeaturesPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
             
             {/* Card 1: Large Left */}
-            <div className="lg:col-span-5 bg-[#0A4033] rounded-[32px] p-10 lg:p-12 text-white flex flex-col min-h-[500px] relative overflow-hidden group">
+            <div className="lg:col-span-5 bg-[#0A4033] rounded-[32px] p-10 lg:p-12 pb-10 text-white flex flex-col min-h-[500px] lg:min-h-[600px] relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
               
               <div className="flex justify-between items-start relative z-10 mb-8">
@@ -108,7 +108,8 @@ export default function FeaturesPage() {
                 </div>
               </div>
               
-              <div className="relative z-10 flex-1 w-full rounded-2xl overflow-hidden mb-8 border border-white/10 shadow-inner bg-[#124C3F]">
+              {/* Edge-to-edge Image wrapper */}
+              <div className="relative z-10 flex-1 -mx-10 lg:-mx-12 mb-10 overflow-hidden border-y border-white/10 bg-[#124C3F] shadow-inner">
                 <img src="/images/features-page/Admin - Facility Management.png" alt="Care Management Dashboard" className="w-full h-full object-cover object-left-top opacity-90 group-hover:opacity-100 transition-opacity" />
               </div>
               
