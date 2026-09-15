@@ -198,31 +198,61 @@ export default async function FeatureDetailPage({ params }: { params: Promise<{ 
       </section>
 
       {/* SECTION: FAQ */}
-      <section className="py-24 lg:py-32 bg-[#F6F4EB]">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-             <h2 className="text-4xl lg:text-5xl font-bold font-serif text-[#0A4033] mb-6">
-               {data.faq.title}
-             </h2>
-             <p className="text-[#0A4033]/70 text-lg">
-               {data.faq.description}
-             </p>
-          </div>
+      <section className="py-24 lg:py-32 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+            
+            {/* Left Column: Heading & Graphic */}
+            <div className="lg:pr-8">
+              <div className="flex items-center gap-4 text-[10px] font-bold uppercase tracking-[0.2em] text-[#0A4033]/60 mb-6">
+                <span className="w-8 h-[1px] bg-[#0A4033]/30" />
+                FREQUENTLY ASKED QUESTIONS
+              </div>
+              <h2 className="text-4xl lg:text-5xl font-bold font-serif text-[#0A4033] mb-6 leading-tight">
+                {data.faq.title.split(' ').slice(0, 3).join(' ')} <br />
+                <span className="italic font-normal">{data.faq.title.split(' ').slice(3).join(' ')}</span>
+              </h2>
+              <p className="text-[#0A4033]/70 text-lg mb-16 max-w-sm">
+                {data.faq.description}
+              </p>
 
-          <div className="space-y-6">
-            {data.faq.questions.map((q, i) => (
-              <details key={i} className="group bg-white rounded-2xl p-6 shadow-sm border border-[#0A4033]/5 open:ring-1 open:ring-[#0A4033]/20 transition-all">
-                <summary className="flex justify-between items-center font-bold text-[#0A4033] cursor-pointer list-none">
-                  {q.question}
-                  <span className="transition group-open:rotate-180">
-                    <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
-                  </span>
-                </summary>
-                <p className="text-[#0A4033]/70 mt-4 leading-relaxed pl-2 border-l-2 border-[#13695A]/30">
-                  {q.answer}
-                </p>
-              </details>
-            ))}
+              {/* Big Question Mark Graphic */}
+              <div className="relative w-28 h-28 ml-2">
+                <div className="absolute inset-0 bg-[#E7EFEA] rounded-full translate-x-4 translate-y-4" />
+                <div className="absolute inset-0 bg-[#0A4033] rounded-full flex items-center justify-center text-white text-6xl font-serif">
+                  ?
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column: Accordion */}
+            <div className="flex flex-col pt-4">
+              <div className="border-t border-[#0A4033]/10">
+                {data.faq.questions.map((q, i) => (
+                  <details key={i} className="group border-b border-[#0A4033]/10 py-6 transition-all cursor-pointer">
+                    <summary className="flex justify-between items-center font-bold font-serif text-lg lg:text-xl text-[#0A4033] list-none [&::-webkit-details-marker]:hidden">
+                      {q.question}
+                      <span className="flex-shrink-0 ml-4 w-8 h-8 rounded-full bg-[#E7EFEA] text-[#0A4033] flex items-center justify-center group-open:bg-[#0A4033] group-open:text-white transition-colors">
+                        <svg className="w-4 h-4 hidden group-open:block" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+                        <svg className="w-4 h-4 block group-open:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" /></svg>
+                      </span>
+                    </summary>
+                    <p className="text-[#0A4033]/70 mt-4 leading-relaxed text-sm pr-12">
+                      {q.answer}
+                    </p>
+                  </details>
+                ))}
+              </div>
+
+              {/* Still have a question block */}
+              <div className="mt-8 bg-[#F6F4EB] rounded-xl p-5 px-6 flex justify-between items-center border border-[#0A4033]/5">
+                <span className="text-sm font-bold text-[#0A4033]/70">Still have a question?</span>
+                <Link href="/contact" className="text-xs font-bold text-[#0A4033] flex items-center gap-1 hover:opacity-70 transition-opacity uppercase tracking-wider">
+                  Talk to our team <ArrowUpRight className="w-3.5 h-3.5" />
+                </Link>
+              </div>
+            </div>
+            
           </div>
         </div>
       </section>
