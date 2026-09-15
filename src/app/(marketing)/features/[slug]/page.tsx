@@ -98,29 +98,29 @@ export default async function FeatureDetailPage({ params }: { params: Promise<{ 
       </section>
 
       {/* SECTION: A CLEARER WAY TO WORK */}
-      <section id="overview" className="py-24 lg:py-32 bg-white">
+      <section id="overview" className="py-24 lg:py-32 bg-[#0A4033] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row justify-between items-end gap-8 mb-16 border-t border-[#0A4033]/10 pt-8">
+          <div className="flex flex-col lg:flex-row justify-between items-end gap-8 mb-16 border-t border-white/20 pt-8">
             <div className="max-w-xl">
-              <div className="flex items-center gap-4 text-[10px] font-bold uppercase tracking-[0.2em] text-[#0A4033]/60 mb-6">
-                <span className="w-8 h-[1px] bg-[#0A4033]/30" />
+              <div className="flex items-center gap-4 text-[10px] font-bold uppercase tracking-[0.2em] text-white/60 mb-6">
+                <span className="w-8 h-[1px] bg-white/30" />
                 {data.clearerWay.eyebrow}
               </div>
               <h2 className="text-4xl lg:text-5xl font-bold font-serif leading-tight">
                 {data.clearerWay.title.split(' ').slice(0, 3).join(' ')} <br />
-                <span className="italic font-normal">{data.clearerWay.title.split(' ').slice(3).join(' ')}</span>
+                <span className="italic font-normal text-[#B5D5C5]">{data.clearerWay.title.split(' ').slice(3).join(' ')}</span>
               </h2>
             </div>
-            <p className="max-w-sm text-[#0A4033]/70 leading-relaxed text-sm lg:text-base">
+            <p className="max-w-sm text-white/70 leading-relaxed text-sm lg:text-base">
               {data.clearerWay.description}
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {data.clearerWay.benefits.map((benefit, i) => (
-              <div key={i} className="bg-[#F6F4EB] rounded-3xl p-8 lg:p-10 border border-[#0A4033]/5">
-                <h3 className="text-2xl font-bold font-serif text-[#0A4033] mb-4">{benefit.title}</h3>
-                <p className="text-[#0A4033]/70 leading-relaxed">{benefit.description}</p>
+              <div key={i} className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 lg:p-10 border border-white/10">
+                <h3 className="text-2xl font-bold font-serif text-white mb-4">{benefit.title}</h3>
+                <p className="text-white/70 leading-relaxed">{benefit.description}</p>
               </div>
             ))}
           </div>
@@ -128,36 +128,36 @@ export default async function FeatureDetailPage({ params }: { params: Promise<{ 
       </section>
 
       {/* SECTION: HOW IT WORKS */}
-      <section className="py-24 lg:py-32 bg-[#0A4033] text-white">
+      <section className="py-24 lg:py-32 bg-white text-[#0A4033]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row justify-between items-end gap-8 mb-16 border-t border-white/20 pt-8">
+          <div className="flex flex-col lg:flex-row justify-between items-center gap-8 mb-16">
             <div className="max-w-xl">
-              <div className="flex items-center gap-4 text-[10px] font-bold uppercase tracking-[0.2em] text-white/60 mb-6">
-                <span className="w-8 h-[1px] bg-white/30" />
+              <div className="flex items-center gap-4 text-[10px] font-bold uppercase tracking-[0.2em] text-[#0A4033]/60 mb-6">
+                <span className="w-8 h-[1px] bg-[#0A4033]/30" />
                 {data.howItWorks.eyebrow}
               </div>
-              <h2 className="text-4xl lg:text-5xl font-bold font-serif leading-tight">
-                {data.howItWorks.title}
+              <h2 className="text-4xl lg:text-5xl font-bold font-serif leading-[1.2]">
+                {data.howItWorks.title.split('.')[0]}. <br />
+                <span className="italic font-normal">{data.howItWorks.title.split('.').slice(1).join('.').trim()}</span>
               </h2>
             </div>
-            <p className="max-w-sm text-white/70 leading-relaxed text-sm lg:text-base">
+            <p className="max-w-sm text-[#0A4033]/70 leading-relaxed text-sm lg:text-base">
               {data.howItWorks.description}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-l border-white/20">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-[#0A4033]/10">
             {data.howItWorks.steps.map((step, i) => (
-              <div key={i} className="p-8 lg:p-10 border-b border-r border-white/20">
-                <div className="flex items-center gap-2 mb-10">
-                  <span className="text-xs font-mono text-white/40">0{i + 1}</span>
-                  <div className="w-1.5 h-1.5 rounded-full bg-[#B5D5C5]" />
+              <div key={i} className="p-8 lg:p-10 lg:pl-10 lg:pr-10 border-b lg:border-b-0 lg:border-r border-[#0A4033]/10 last:border-r-0 flex flex-col h-full">
+                <span className="text-sm font-bold font-serif text-[#0A4033] mb-24">0{i + 1}</span>
+                <div className="mt-auto">
+                  <h3 className="text-2xl font-bold font-serif mb-4 leading-tight text-[#0A4033]">
+                    {step.title}
+                  </h3>
+                  <p className="text-[#0A4033]/70 text-xs sm:text-sm leading-relaxed">
+                    {step.description}
+                  </p>
                 </div>
-                <h3 className="text-2xl font-bold font-serif mb-6 leading-tight">
-                  {step.title}
-                </h3>
-                <p className="text-white/70 text-sm leading-relaxed">
-                  {step.description}
-                </p>
               </div>
             ))}
           </div>
