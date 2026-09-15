@@ -12,7 +12,7 @@ export function HeroHeader() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between relative">
         {/* Brand Logo */}
         <Link
-          href="#top"
+          href="/"
           className="brand flex items-center group focus:outline-none focus:ring-2 focus:ring-primary rounded-lg"
           aria-label="Cantra Care home"
         >
@@ -23,26 +23,30 @@ export function HeroHeader() {
           />
         </Link>
         <div className="flex gap-6">
-          {/* Center Navigation Links (Matching Screenshot) */}
+          {/* Center Navigation Links */}
           <nav className="hidden lg:flex items-center gap-7 text-xs font-medium text-body" aria-label="Main navigation">
-
-            <a href="#care-settings" className="hover:text-primary transition-colors">
-              Why Cantra
-            </a>
-            <a href="#faqs" className="hover:text-primary transition-colors">
-              FAQ
-            </a>
+            <Link href="/features/care-plan" className="hover:text-primary transition-colors">
+              Care Plan
+            </Link>
+            <Link href="/features/emar" className="hover:text-primary transition-colors">
+              eMAR
+            </Link>
+            <Link href="/features/staff-rota" className="hover:text-primary transition-colors">
+              Staff & Rota
+            </Link>
+            <Link href="/features/compliances" className="hover:text-primary transition-colors">
+              Compliances
+            </Link>
           </nav>
 
-          {/* Right Side Dual CTA Buttons (Matching Screenshot) */}
+          {/* Right Side Dual CTA Buttons */}
           <div className="hidden sm:flex items-center gap-3">
-
-            <a
-              href="#contact"
+            <Link
+              href="/contact"
               className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-primary hover:bg-primary-hover text-surface text-xs font-semibold shadow-md shadow-primary/15 transition-all"
             >
               Book a demo
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -60,11 +64,11 @@ export function HeroHeader() {
         {mobileMenuOpen && (
           <div className="lg:hidden absolute top-full left-4 right-4 mt-2 p-5 bg-white rounded-2xl border border-border shadow-2xl z-40 space-y-3">
             <nav className="flex flex-col space-y-2 text-sm font-medium text-primary">
-              <a href="#platform" onClick={() => setMobileMenuOpen(false)} className="p-2 hover:bg-surface rounded-lg">Platform</a>
-              <a href="#care-settings" onClick={() => setMobileMenuOpen(false)} className="p-2 hover:bg-surface rounded-lg">Care settings</a>
-              <a href="#why-cantra" onClick={() => setMobileMenuOpen(false)} className="p-2 hover:bg-surface rounded-lg">Why Cantra</a>
-              <a href="#faqs" onClick={() => setMobileMenuOpen(false)} className="p-2 hover:bg-surface rounded-lg">FAQs</a>
-              <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="p-3 bg-primary text-surface rounded-xl text-center font-semibold mt-2">Book a demo</a>
+              <Link href="/features/care-plan" onClick={() => setMobileMenuOpen(false)} className="p-2 hover:bg-surface rounded-lg">Care Plan</Link>
+              <Link href="/features/emar" onClick={() => setMobileMenuOpen(false)} className="p-2 hover:bg-surface rounded-lg">eMAR</Link>
+              <Link href="/features/staff-rota" onClick={() => setMobileMenuOpen(false)} className="p-2 hover:bg-surface rounded-lg">Staff & Rota</Link>
+              <Link href="/features/compliances" onClick={() => setMobileMenuOpen(false)} className="p-2 hover:bg-surface rounded-lg">Compliances</Link>
+              <Link href="/contact" onClick={() => setMobileMenuOpen(false)} className="p-3 bg-primary text-surface rounded-xl text-center font-semibold mt-2">Book a demo</Link>
             </nav>
           </div>
         )}
