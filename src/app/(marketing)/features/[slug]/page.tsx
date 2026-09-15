@@ -14,19 +14,21 @@ export function generateStaticParams() {
   }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
-  const data = featuresData[params.slug];
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const resolvedParams = await params;
+  const data = featuresData[resolvedParams.slug];
   if (!data) return notFound();
 
   return constructMetadata({
     title: `${data.hero.title} | Cantra Care`,
     description: data.hero.description,
-    path: `/features/${params.slug}`,
+    path: `/features/${resolvedParams.slug}`,
   });
 }
 
-export default function FeatureDetailPage({ params }: { params: { slug: string } }) {
-  const data = featuresData[params.slug];
+export default async function FeatureDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const resolvedParams = await params;
+  const data = featuresData[resolvedParams.slug];
   
   if (!data) {
     notFound();
