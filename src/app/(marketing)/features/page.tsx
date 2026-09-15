@@ -271,8 +271,36 @@ export default function FeaturesPage() {
             </div>
 
             {/* Right Visual */}
-            <div className="relative w-full">
-               <img src="/images/features-page/Group 30.png" alt="Incident in Context" className="w-full h-auto" />
+            <div className="relative w-full max-w-lg mx-auto lg:max-w-none">
+               <img src="/images/features-page/incident-review.jpg" alt="Incident in Context" className="w-full h-auto rounded-[32px] shadow-2xl object-cover" />
+               
+               {/* Top Left Info Tile */}
+               <div className="absolute top-12 -left-6 sm:-left-12 bg-white rounded-2xl p-4 shadow-xl flex items-center gap-4 z-20 border border-[#0A4033]/10">
+                 <div className="w-10 h-10 rounded-full border-2 border-[#13695A] text-[#13695A] flex items-center justify-center">
+                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                   </svg>
+                 </div>
+                 <div>
+                   <p className="text-sm font-bold text-[#0A4033]">Clear</p>
+                   <p className="text-xs text-[#0A4033]/60">Checked 28 Jun 2025</p>
+                 </div>
+               </div>
+
+               {/* Bottom Right Info Tile */}
+               <div className="absolute bottom-12 -right-6 sm:-right-12 bg-white rounded-2xl p-4 sm:p-5 shadow-xl flex items-start gap-4 z-20 w-[280px] sm:w-[320px] border border-[#0A4033]/10">
+                 <div className="w-10 h-10 rounded-full bg-[#13695A] text-white flex flex-shrink-0 items-center justify-center font-serif italic text-lg">
+                   MD
+                 </div>
+                 <div className="flex-1">
+                   <div className="flex justify-between items-center mb-1">
+                     <p className="text-sm font-bold text-[#0A4033]">Margaret Doyle</p>
+                     <span className="text-[9px] font-bold uppercase tracking-wider bg-[#E7EFEA] text-[#13695A] px-2 py-0.5 rounded-full">Stable</span>
+                   </div>
+                   <p className="text-[11px] text-[#0A4033]/60 mb-2">Room 21C • 3 notes</p>
+                   <p className="text-xs text-[#0A4033] leading-relaxed">Good day, all care delivered as planned.</p>
+                 </div>
+               </div>
             </div>
 
           </div>
