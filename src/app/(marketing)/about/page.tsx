@@ -187,43 +187,45 @@ export default function AboutPage() {
       </section>
 
       {/* OUR TEAM */}
-      <section id="team" className="py-24 lg:py-32 bg-white">
+      <section id="team" className="py-24 lg:py-32 bg-[#0A4033] text-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-r from-[#6FB19F] via-[#2D6656] to-[#0A4033] rounded-[40px] p-8 sm:p-12 lg:p-16 shadow-2xl overflow-hidden">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-              
-              <div className="lg:col-span-5 relative flex items-center justify-center min-h-[300px]">
-                <div className="text-center bg-white/10 backdrop-blur-md border border-white/20 p-12 rounded-[32px] shadow-2xl">
-                   <div className="text-7xl sm:text-8xl font-bold font-serif text-white mb-2">25</div>
-                   <div className="text-sm font-bold uppercase tracking-[0.2em] text-white/70">Members</div>
-                </div>
+          <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+            
+            <div className="w-full lg:w-1/2 flex justify-center lg:justify-end relative">
+              <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-full border border-[#B5D5C5]/20 flex flex-col items-center justify-center shrink-0">
+                 <div className="text-[100px] sm:text-[120px] font-bold font-serif text-[#E7EFEA] leading-none mb-2 tracking-tight">
+                   25
+                 </div>
+                 <div className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.25em] text-[#E7EFEA]/80">
+                   Members
+                 </div>
               </div>
-
-              <div className="lg:col-span-7 bg-white p-8 sm:p-12 rounded-[32px] shadow-lg">
-                <div className="flex items-center gap-4 text-[10px] font-bold uppercase tracking-[0.2em] text-[#0A4033]/60 mb-6">
-                  <span className="w-8 h-[1px] bg-[#0A4033]/30" />
-                  Created together
-                </div>
-                
-                <h2 className="text-4xl lg:text-5xl font-bold font-serif text-[#0A4033] mb-6 leading-tight">
-                  A focused team with <br />
-                  <span className="italic font-normal text-[#13695A]">one shared standard.</span>
-                </h2>
-                
-                <p className="text-[#0A4033]/70 text-sm sm:text-base mb-10 max-w-lg leading-relaxed">
-                  Cantra Care is created by 25 members working across product, technology, care operations and customer support. Together, we turn frontline needs into a platform that feels considered, dependable and easy to use.
-                </p>
-
-                <div className="flex gap-2 flex-wrap">
-                  {["Product", "Technology", "Care insight", "Support"].map((discipline) => (
-                    <span key={discipline} className="px-4 py-2 bg-[#F6F4EB] text-[#0A4033] rounded-full text-xs font-bold border border-[#0A4033]/5">
-                      {discipline}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
             </div>
+
+            <div className="w-full lg:w-1/2">
+              <div className="flex items-center gap-4 text-[10px] font-bold uppercase tracking-[0.2em] text-[#E7EFEA]/60 mb-6">
+                <span className="w-8 h-[1px] bg-[#E7EFEA]/30" />
+                Created together
+              </div>
+              
+              <h2 className="text-4xl lg:text-5xl font-bold font-serif text-[#E7EFEA] mb-8 leading-tight">
+                A focused team with <br className="hidden sm:block" />
+                <span className="italic font-normal">one shared standard.</span>
+              </h2>
+              
+              <p className="text-[#E7EFEA]/80 text-sm sm:text-base mb-10 max-w-lg leading-relaxed">
+                Cantra Care is created by 25 members working across product, technology, care operations and customer support. Together, we turn frontline needs into a platform that feels considered, dependable and easy to use.
+              </p>
+
+              <div className="flex gap-3 flex-wrap">
+                {["Product", "Technology", "Care insight", "Support"].map((discipline) => (
+                  <span key={discipline} className="px-5 py-2 text-[#E7EFEA] rounded-full text-xs font-medium border border-[#E7EFEA]/20 hover:bg-white/5 transition-colors">
+                    {discipline}
+                  </span>
+                ))}
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
