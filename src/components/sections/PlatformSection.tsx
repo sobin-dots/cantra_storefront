@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
 export function PlatformSection() {
@@ -7,21 +8,25 @@ export function PlatformSection() {
       num: "01",
       title: "Care Plan",
       desc: "Create person-centred care plans, keep daily records organised and coordinate care.",
+      href: "/features/care-plan",
     },
     {
       num: "02",
       title: "eMAR",
       desc: "Keep medication administration records accessible within everyday care workflows.",
+      href: "/features/emar",
     },
     {
       num: "03",
       title: "Staff & Rota",
       desc: "Plan rotas, make responsibilities visible and coordinate your frontline teams.",
+      href: "/features/staff-rota",
     },
     {
       num: "04",
       title: "Compliances",
       desc: "Keep operational records organised and turn day-to-day information into clearer reports.",
+      href: "/features/compliances",
     },
   ];
 
@@ -61,9 +66,10 @@ export function PlatformSection() {
         {/* Asymmetrical 4-Card Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {serviceCards.map((card) => (
-            <article
+            <Link
               key={card.num}
-              className="group relative bg-white p-7 sm:p-8 rounded-2xl border border-border shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between min-h-[290px] sm:min-h-[310px] cursor-pointer"
+              href={card.href}
+              className="group relative bg-white p-7 sm:p-8 rounded-2xl border border-border shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between min-h-[290px] sm:min-h-[310px] cursor-pointer block"
             >
               {/* Top Row: Number in circle + top-right arrow */}
               <div className="flex items-center justify-between">
@@ -75,14 +81,14 @@ export function PlatformSection() {
 
               {/* Bottom Area: Title + Description */}
               <div className="space-y-3 pt-12 sm:pt-14">
-                <h3 className="text-xl sm:text-2xl font-regular leading-relaxed text-primary group-hover:text-primary-hover transition-colors leading-snug font-serif">
+                <h3 className="text-xl sm:text-2xl font-normal leading-relaxed text-primary group-hover:text-primary-hover transition-colors leading-snug font-serif">
                   {card.title}
                 </h3>
-                <p className="text-sm sm:text-base   leading-relaxed">
+                <p className="text-sm sm:text-base leading-relaxed text-body">
                   {card.desc}
                 </p>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
       </div>

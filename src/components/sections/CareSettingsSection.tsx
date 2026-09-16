@@ -90,9 +90,9 @@ export function CareSettingsSection() {
             {/* Card 03: Mental Health Care Homes */}
             <article className="group relative w-full rounded-3xl lg:rounded-[2rem] overflow-hidden  transition-all duration-300 hover:scale-[1.01]  flex-1 min-h-[210px] sm:min-h-[240px] lg:min-h-[255px] flex flex-col justify-end p-6 sm:p-7">
               <img
-                src="/images/care-setting-mental-health.jpg"
+                src="/images/features-page/senior-woman-sitting-bedroom.jpg"
                 alt="Mental Health Care Homes"
-                className="absolute inset-0 w-full h-full object-cover object-[center_25%] transition-transform duration-500 group-hover:scale-105"
+                className="absolute inset-0 w-full h-full object-cover object-[center_80%] transition-transform duration-500 group-hover:scale-105"
                 loading="lazy"
               />
               <div

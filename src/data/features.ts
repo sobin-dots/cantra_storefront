@@ -119,7 +119,7 @@ export const featuresData: Record<string, FeatureData> = {
       description: "Designed to fit the working day, with clear information at each point where a decision or record matters.",
       steps: [
         { title: "Prepare", description: "Review the round, priorities and any relevant resident information." },
-        { title: "Confirm", description: "Check the resident, medication, timing and instructions before recording." },
+        { title: "Confirm", description: "Check medication, timing and instructions before recording." },
         { title: "Record", description: "Capture the outcome at the point of administration." },
         { title: "Respond", description: "Escalate exceptions and review a complete, time-stamped trail." }
       ]
@@ -225,7 +225,7 @@ export const featuresData: Record<string, FeatureData> = {
         { title: "Record", description: "Capture care, incidents, checks and actions in a consistent way." },
         { title: "Connect", description: "Link evidence to residents, staff, policies and responsibilities." },
         { title: "Review", description: "Use live views to understand gaps, trends and overdue work." },
-        { title: "Improve", description: "Assign action, follow progress and learn from what the data shows." }
+        { title: "Improve", description: "Assign, follow tasks and learn from what the data shows." }
       ]
     },
     whyChoose: {
