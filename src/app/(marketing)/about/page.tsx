@@ -203,6 +203,43 @@ export default function AboutPage() {
       </section>
 
 
+      {/* CLARITY IN NUMBERS (Moved here and redesigned) */}
+      <section id="results" className="py-24 lg:py-32 bg-[#0A4033] text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div className="flex flex-col lg:flex-row justify-between lg:items-end gap-12 mb-20 lg:mb-28">
+            <div className="max-w-2xl">
+              <div className="flex items-center gap-4 text-[10px] font-bold uppercase tracking-[0.2em] text-[#B5D5C5]/80 mb-8">
+                <span className="w-8 h-[1px] bg-[#B5D5C5]/40" />
+                Clarity in numbers
+              </div>
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-serif leading-[1.1]">
+                Designed to make a <br className="hidden sm:block" />
+                <span className="italic font-normal text-[#B5D5C5]">measurable difference.</span>
+              </h2>
+            </div>
+            
+            <div className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/50 lg:pb-4">
+              Cantra Care-reported outcomes.
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-16">
+            {[
+              { stat: "94%", label: "reduction in documentation time" },
+              { stat: "15+", label: "hours saved per carer weekly" },
+              { stat: "50%", label: "less administrative work" },
+              { stat: "12k+", label: "residents served" },
+            ].map((metric, i) => (
+              <div key={i} className="flex flex-col lg:border-r border-[#B5D5C5]/20 lg:px-12 first:pl-0 last:border-r-0">
+                <div className="text-6xl lg:text-7xl font-bold font-serif text-[#B5D5C5] mb-6 tracking-tight leading-none">{metric.stat}</div>
+                <div className="text-[11px] sm:text-xs text-white/80 max-w-[140px] leading-relaxed">{metric.label}</div>
+              </div>
+            ))}
+          </div>
+
+        </div>
+      </section>
 
       {/* OUR PURPOSE */}
       <section className="py-24 lg:py-32 bg-[#F6F4EB]">
@@ -249,39 +286,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* CLARITY IN NUMBERS */}
-      <section id="results" className="py-24 lg:py-32 bg-[#0A4033] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 lg:mb-24">
-             <div className="flex items-center justify-center gap-4 text-[10px] font-bold uppercase tracking-[0.2em] text-white/60 mb-6">
-                <span className="w-8 h-[1px] bg-white/30" />
-                Clarity in numbers
-                <span className="w-8 h-[1px] bg-white/30" />
-             </div>
-             <h2 className="text-4xl lg:text-5xl font-bold font-serif mb-6 leading-tight">
-               Designed to make a <br />
-               <span className="italic font-normal text-[#B5D5C5]">measurable difference.</span>
-             </h2>
-             <p className="text-white/70 text-lg">
-               Cantra Care-reported outcomes.
-             </p>
-          </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-             {[
-               { stat: "94%", label: "reduction in documentation time" },
-               { stat: "15+", label: "hours saved per carer weekly" },
-               { stat: "50%", label: "less administrative work" },
-               { stat: "12k+", label: "residents served" },
-             ].map((metric, i) => (
-               <div key={i} className="text-center p-8 bg-white/5 backdrop-blur-sm rounded-3xl border border-white/10">
-                 <div className="text-5xl lg:text-6xl font-bold font-serif text-white mb-4 tracking-tight">{metric.stat}</div>
-                 <div className="text-sm text-white/70 max-w-[150px] mx-auto leading-relaxed">{metric.label}</div>
-               </div>
-             ))}
-          </div>
-        </div>
-      </section>
 
       {/* FOOTER AREA */}
       <div className="bg-[#0A4033]">
