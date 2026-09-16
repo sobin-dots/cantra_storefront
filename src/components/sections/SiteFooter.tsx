@@ -52,25 +52,25 @@ export function SiteFooter() {
               </div>
             </div>
 
-            {/* Column 2: EXPLORE (2 cols) */}
-            <nav aria-label="Explore Cantra Care" className="lg:col-span-2 space-y-3">
+            {/* Column 2: COMPANY (2 cols) */}
+            <nav aria-label="Company Navigation" className="lg:col-span-2 space-y-3">
               <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-white/50 block mb-4">
-                Explore
+                Company
               </span>
-              <p><a href="#platform" className="text-xs sm:text-sm text-surface/80 hover:text-white transition-colors">Platform</a></p>
-              <p><a href="#why-cantra" className="text-xs sm:text-sm text-surface/80 hover:text-white transition-colors">Why Cantra</a></p>
-              <p><a href="#faqs" className="text-xs sm:text-sm text-surface/80 hover:text-white transition-colors">FAQs</a></p>
-              <p><a href="#contact" className="text-xs sm:text-sm text-surface/80 hover:text-white transition-colors">Book a demo</a></p>
+              <p><Link href="/" className="text-xs sm:text-sm text-surface/80 hover:text-white transition-colors">Home</Link></p>
+              <p><Link href="/about" className="text-xs sm:text-sm text-surface/80 hover:text-white transition-colors">About Us</Link></p>
+              <p><Link href="/contact" className="text-xs sm:text-sm text-surface/80 hover:text-white transition-colors">Contact</Link></p>
             </nav>
 
-            {/* Column 3: CARE SETTINGS (2 cols) */}
-            <nav aria-label="Care settings" className="lg:col-span-2 space-y-3">
+            {/* Column 3: FEATURES (2 cols) */}
+            <nav aria-label="Features" className="lg:col-span-2 space-y-3">
               <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-white/50 block mb-4">
-                Care settings
+                Features
               </span>
-              <p><a href="#care-settings" className="text-xs sm:text-sm text-surface/80 hover:text-white transition-colors">Residential care homes</a></p>
-              <p><a href="#care-settings" className="text-xs sm:text-sm text-surface/80 hover:text-white transition-colors">Nursing homes</a></p>
-              <p><a href="#care-settings" className="text-xs sm:text-sm text-surface/80 hover:text-white transition-colors">Mental health care homes</a></p>
+              <p><Link href="/features/care-plan" className="text-xs sm:text-sm text-surface/80 hover:text-white transition-colors">Care Plan</Link></p>
+              <p><Link href="/features/emar" className="text-xs sm:text-sm text-surface/80 hover:text-white transition-colors">eMAR</Link></p>
+              <p><Link href="/features/staff-rota" className="text-xs sm:text-sm text-surface/80 hover:text-white transition-colors">Staff & Rota</Link></p>
+              <p><Link href="/features/compliances" className="text-xs sm:text-sm text-surface/80 hover:text-white transition-colors">Compliances</Link></p>
             </nav>
 
             {/* Column 4: CONTACT (3 cols) */}
