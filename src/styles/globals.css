@@ -35,6 +35,9 @@
   --color-forest-border: rgba(70, 92, 89, 0.18);
   --color-forest-muted: #465C59;
   --color-forest-pill: #E2ECEB;
+
+  --text-primary: #2f2f2f;
+  --color-text-primary: #2f2f2f;
 }
 
 :root {

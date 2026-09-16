@@ -90,7 +90,7 @@ export function Footer() {
             />
             <button
               type="submit"
-              className="px-4 py-2.5 bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold rounded-xl transition-colors shrink-0 flex items-center gap-1 shadow-md shadow-blue-600/30"
+              className="px-4 py-2.5 bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold rounded-xl transition-colors shrink-0 flex items-center gap-1 "
             >
               <span>Join</span>
               <ArrowRight className="w-3.5 h-3.5" />

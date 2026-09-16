@@ -21,7 +21,7 @@ export function SiteFooter() {
 
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-white hover:bg-[#cbf17e] text-primary text-sm font-bold shadow-md transition-all duration-200 shrink-0 self-start md:self-center"
+              className="w-[215px] inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white hover:bg-primary-hover hover:text-white text-primary text-sm font-bold shadow-md transition-all duration-200 shrink-0 self-start md:self-center"
             >
               <span>Book a tailored demo</span>
               <span aria-hidden="true">↗</span>
@@ -42,47 +42,50 @@ export function SiteFooter() {
                   className="h-8 w-auto object-contain"
                 />
               </Link>
-              <p className="text-xs sm:text-sm text-surface/80 leading-relaxed max-w-sm">
+              <p className="text-sm sm:text-base text-surface/80 leading-relaxed max-w-sm">
                 One connected care platform, made for the people who keep care moving.
               </p>
               <div className="pt-2">
-                <span className="inline-block text-[11px] px-3.5 py-1 rounded-full border border-white/20 text-surface/80 bg-white/5">
+                <span className="inline-block text-sm px-3.5 py-1 rounded-full border border-white/20 text-surface/80 bg-white/5">
                   Residential • Nursing • Mental health care
                 </span>
               </div>
             </div>
 
-            {/* Column 2: COMPANY (2 cols) */}
-            <nav aria-label="Company Navigation" className="lg:col-span-2 space-y-3">
-              <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-white/50 block mb-4">
-                Company
-              </span>
-              <p><Link href="/" className="text-xs sm:text-sm text-surface/80 hover:text-white transition-colors">Home</Link></p>
-              <p><Link href="/about" className="text-xs sm:text-sm text-surface/80 hover:text-white transition-colors">About Us</Link></p>
-              <p><Link href="/contact" className="text-xs sm:text-sm text-surface/80 hover:text-white transition-colors">Contact</Link></p>
-            </nav>
+            {/* Navigation Columns: Company, Features, Contact (7 cols with justified spacing) */}
+            <div className="lg:col-span-7 flex flex-col sm:flex-row justify-between gap-8 sm:gap-6">
+              {/* Column 2: COMPANY */}
+              <nav aria-label="Company Navigation" className="w-full sm:w-[150px] space-y-3 text-left">
+                <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-white/50 block mb-4">
+                  Company
+                </span>
+                <p><Link href="/" className="text-xs sm:text-sm text-surface/80 hover:text-white transition-colors">Home</Link></p>
+                <p><Link href="/about" className="text-xs sm:text-sm text-surface/80 hover:text-white transition-colors">About Us</Link></p>
+                <p><Link href="/contact" className="text-xs sm:text-sm text-surface/80 hover:text-white transition-colors">Contact</Link></p>
+              </nav>
 
-            {/* Column 3: FEATURES (2 cols) */}
-            <nav aria-label="Features" className="lg:col-span-2 space-y-3">
-              <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-white/50 block mb-4">
-                Features
-              </span>
-              <p><Link href="/features/care-plan" className="text-xs sm:text-sm text-surface/80 hover:text-white transition-colors">Care Plan</Link></p>
-              <p><Link href="/features/emar" className="text-xs sm:text-sm text-surface/80 hover:text-white transition-colors">eMAR</Link></p>
-              <p><Link href="/features/staff-rota" className="text-xs sm:text-sm text-surface/80 hover:text-white transition-colors">Staff & Rota</Link></p>
-              <p><Link href="/features/compliances" className="text-xs sm:text-sm text-surface/80 hover:text-white transition-colors">Compliances</Link></p>
-            </nav>
+              {/* Column 3: FEATURES */}
+              <nav aria-label="Features" className="w-full sm:w-[150px] space-y-3 text-left">
+                <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-white/50 block mb-4">
+                  Features
+                </span>
+                <p><Link href="/features/care-plan" className="text-xs sm:text-sm text-surface/80 hover:text-white transition-colors">Care Plan</Link></p>
+                <p><Link href="/features/emar" className="text-xs sm:text-sm text-surface/80 hover:text-white transition-colors">eMAR</Link></p>
+                <p><Link href="/features/staff-rota" className="text-xs sm:text-sm text-surface/80 hover:text-white transition-colors">Staff & Rota</Link></p>
+                <p><Link href="/features/compliances" className="text-xs sm:text-sm text-surface/80 hover:text-white transition-colors">Compliances</Link></p>
+              </nav>
 
-            {/* Column 4: CONTACT (3 cols) */}
-            <div className="lg:col-span-3 space-y-3">
-              <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-white/50 block mb-4">
-                Contact
-              </span>
-              <p><a href="tel:+442073460250" className="text-xs sm:text-sm text-surface/80 hover:text-white transition-colors">+44 20 7346 0250</a></p>
-              <p><a href="mailto:hello@cantra.care" className="text-xs sm:text-sm text-surface/80 hover:text-white transition-colors">hello@cantra.care</a></p>
-              <div className="text-xs sm:text-sm text-surface/60 pt-2 leading-relaxed">
-                <p>London, England</p>
-                <p>United Kingdom</p>
+              {/* Column 4: CONTACT */}
+              <div className="w-full sm:w-[150px] space-y-3 text-left">
+                <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-white/50 block mb-4">
+                  Contact
+                </span>
+                <p><a href="tel:+442073460250" className="text-xs sm:text-sm text-surface/80 hover:text-white transition-colors">+44 20 7346 0250</a></p>
+                <p><a href="mailto:hello@cantra.care" className="text-xs sm:text-sm text-surface/80 hover:text-white transition-colors">hello@cantra.care</a></p>
+                <div className="text-xs sm:text-sm text-surface/60 pt-2 leading-relaxed">
+                  <p>London, England</p>
+                  <p>United Kingdom</p>
+                </div>
               </div>
             </div>
           </div>
@@ -90,8 +93,8 @@ export function SiteFooter() {
           {/* Bottom Legal & Back to Top Bar */}
           <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-surface/50 gap-4">
             <div className="flex flex-wrap items-center gap-x-6 gap-y-1">
-              <p>© {new Date().getFullYear()} Cantra Care Ltd. All rights reserved.</p>
-              <p>Care photography by Age Cymru via Unsplash.</p>
+              <p>© {new Date().getFullYear()} Cantra Care . All rights reserved.</p>
+
             </div>
             <a
               href="#top"

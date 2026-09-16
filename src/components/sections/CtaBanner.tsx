@@ -7,7 +7,7 @@ export function CtaBanner() {
   return (
     <section className="py-20 relative overflow-hidden" aria-label="Call to Action">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="relative rounded-3xl p-8 sm:p-12 lg:p-16 bg-gradient-to-r from-blue-900/50 via-indigo-900/40 to-purple-950/60 border border-blue-500/30 backdrop-blur-2xl shadow-2xl overflow-hidden text-center space-y-8">
+        <div className="relative rounded-3xl p-8 sm:p-12 lg:p-16 bg-gradient-to-r from-blue-900/50 via-indigo-900/40 to-purple-950/60 border border-blue-500/30 backdrop-blur-2xl overflow-hidden text-center space-y-8">
           {/* Ambient Glow in Box */}
           <div className="absolute -top-24 -left-24 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl pointer-events-none" />
           <div className="absolute -bottom-24 -right-24 w-72 h-72 bg-purple-500/20 rounded-full blur-3xl pointer-events-none" />

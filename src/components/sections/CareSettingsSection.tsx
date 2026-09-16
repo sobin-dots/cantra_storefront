@@ -26,7 +26,7 @@ export function CareSettingsSection() {
           </h2>
 
           {/* Explainer Subtitle */}
-          <p className="text-sm sm:text-base text-body max-w-xl mx-auto leading-relaxed pt-1">
+          <p className="text-sm sm:text-base  max-w-xl mx-auto leading-relaxed pt-1">
             Flexible enough for different care environments, focused enough for the realities of daily delivery.
           </p>
         </div>
@@ -47,13 +47,13 @@ export function CareSettingsSection() {
                 aria-hidden="true"
               />
               <div className="relative z-10 space-y-2 max-w-md">
-                <span className="text-xs font-mono font-medium text-white/80 block">
+                <span className="text-sm sm:text-base font-mono font-medium text-white/80 block">
                   01
                 </span>
                 <h3 className="text-2xl sm:text-3xl lg:text-[32px] font-normal font-serif text-white tracking-tight leading-snug">
                   Residential Care Homes
                 </h3>
-                <p className="text-xs sm:text-sm text-white/85 leading-relaxed">
+                <p className="text-sm sm:text-base text-white/85 leading-relaxed">
                   Coordinate everyday routines, records and team activity with a clearer shared view.
                 </p>
               </div>
@@ -75,13 +75,13 @@ export function CareSettingsSection() {
                 aria-hidden="true"
               />
               <div className="relative z-10 space-y-1.5 max-w-sm">
-                <span className="text-[11px] font-mono font-medium text-white/80 block">
+                <span className="text-sm sm:text-base font-mono font-medium text-white/80 block">
                   02
                 </span>
-                <h3 className="text-xl sm:text-2xl font-normal font-serif text-white tracking-tight leading-snug">
+                <h3 className="text-2xl sm:text-3xl font-normal font-serif text-white tracking-tight leading-snug">
                   Nursing Homes
                 </h3>
-                <p className="text-xs text-white/85 leading-relaxed">
+                <p className="text-sm sm:text-base text-white/85 leading-relaxed">
                   Keep care, medication and staffing workflows visible and easier to manage.
                 </p>
               </div>
@@ -100,13 +100,13 @@ export function CareSettingsSection() {
                 aria-hidden="true"
               />
               <div className="relative z-10 space-y-1.5 max-w-sm">
-                <span className="text-[11px] font-mono font-medium text-white/80 block">
+                <span className="text-sm sm:text-base font-mono font-medium text-white/80 block">
                   03
                 </span>
-                <h3 className="text-xl sm:text-2xl font-normal font-serif text-white tracking-tight leading-snug">
+                <h3 className="text-2xl sm:text-3xl font-normal font-serif text-white tracking-tight leading-snug">
                   Mental Health Care Homes
                 </h3>
-                <p className="text-xs text-white/85 leading-relaxed">
+                <p className="text-sm sm:text-base text-white/85 leading-relaxed">
                   Support individual care plans, daily coordination and structured documentation.
                 </p>
               </div>

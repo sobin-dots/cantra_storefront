@@ -10,7 +10,7 @@ export function WhyCantraSection() {
     {
       num: "02",
       title: "Build care plans",
-      desc: "Capture each person’s needs and preferences in clear, person-centred plans.",
+      desc: "Capture each person’s needs and preferences in clear plans.",
     },
     {
       num: "03",
@@ -46,7 +46,7 @@ export function WhyCantraSection() {
               className="text-4xl sm:text-5xl lg:text-[54px] font-normal font-serif text-white tracking-tight leading-[1.12]"
             >
               From setup to<br />
-              <span className="italic font-serif font-normal text-white">stronger oversight.</span>
+              stronger oversight.
             </h2>
           </div>
 
@@ -57,16 +57,16 @@ export function WhyCantraSection() {
         </div>
 
         {/* 4 Steps Columns Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 pt-4 border-t border-white/15">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 pt-4 border-t border-white/15">
           {steps.map((step) => (
             <article key={step.num} className="space-y-3">
               <span className="text-xs font-mono font-medium text-surface/50 block">
                 {step.num}
               </span>
-              <h3 className="text-lg sm:text-xl font-bold font-serif text-white leading-snug">
+              <h3 className="text-xl sm:text-2xl font-normal font-serif text-white ">
                 {step.title}
               </h3>
-              <p className="text-xs sm:text-sm text-surface/80 leading-relaxed">
+              <p className="text-sm sm:text-base text-surface/80 leading-relaxed">
                 {step.desc}
               </p>
             </article>

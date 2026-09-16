@@ -31,22 +31,22 @@ export function ContactSection() {
           {/* Left Column: Contact & Office Info */}
           <div className="lg:col-span-5 space-y-6">
             {/* Linear Eyebrow */}
-            <div className="flex items-center gap-3 text-[10px] sm:text-xs font-semibold uppercase tracking-[0.2em] text-[#0B4F43]">
-              <span className="w-6 h-[1.5px] bg-[#0B4F43]" aria-hidden="true" />
+            <div className="flex items-center gap-3 text-[10px] sm:text-xs font-semibold uppercase tracking-[0.2em] text-primary">
+              <span className="w-6 h-[1.5px] bg-primary" aria-hidden="true" />
               <span>Contact Cantra Care</span>
             </div>
 
             {/* Headline */}
             <h2
               id="contact-heading"
-              className="text-4xl sm:text-5xl lg:text-[54px] font-bold font-serif text-[#0B4F43] tracking-tight leading-[1.12]"
+              className="text-4xl sm:text-5xl lg:text-[54px] font-normal font-serif text-primary tracking-tight leading-[1.12]"
             >
               Tell us what <br />
-              <span className="italic font-serif font-normal text-[#0B4F43]">you need.</span>
+              you need.
             </h2>
 
             {/* Description */}
-            <p className="text-sm sm:text-base text-[#465C59] leading-relaxed max-w-md pt-1">
+            <p className="text-sm sm:text-base text-primary leading-relaxed max-w-md pt-1">
               Whether you’re exploring a new care platform or want to understand a particular feature, send us a message and our team will respond during business hours.
             </p>
 
@@ -57,13 +57,13 @@ export function ContactSection() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {/* Office */}
               <div className="space-y-1">
-                <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#465C59]/80">
+                <p className="text-sm sm:text-base font-bold uppercase tracking-[0.18em] text-primary/80">
                   Office
                 </p>
-                <p className="font-serif font-bold text-base text-[#0B4F43] pt-1">
+                <p className=" font-bold text-sm sm:text-base text-primary pt-1">
                   Cantra Care Ltd.
                 </p>
-                <p className="text-xs sm:text-sm text-[#465C59] leading-relaxed">
+                <p className="text-sm sm:text-base text-primary leading-relaxed">
                   London, England<br />
                   United Kingdom
                 </p>
@@ -71,13 +71,13 @@ export function ContactSection() {
 
               {/* Business Hours */}
               <div className="space-y-1">
-                <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#465C59]/80">
+                <p className="text-sm sm:text-base font-bold uppercase tracking-[0.18em] text-primary/80">
                   Business Hours
                 </p>
-                <p className="font-serif font-bold text-base text-[#0B4F43] pt-1">
+                <p className=" font-bold text-sm sm:text-base text-primary pt-1">
                   Monday – Friday
                 </p>
-                <p className="text-xs sm:text-sm text-[#465C59] leading-relaxed">
+                <p className="text-sm sm:text-base text-primary leading-relaxed">
                   09:00 AM – 05:00 PM
                 </p>
               </div>
@@ -88,13 +88,13 @@ export function ContactSection() {
 
             {/* Contact Details */}
             <div className="space-y-1.5">
-              <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#465C59]/80 mb-2">
+              <p className="text-sm sm:text-base font-bold uppercase tracking-[0.18em] text-primary/80 mb-2">
                 Contact
               </p>
               <p>
                 <a
                   href="tel:+442073460250"
-                  className="font-serif font-bold text-base sm:text-lg text-[#0B4F43] hover:underline"
+                  className="  text-sm sm:text-base text-primary hover:underline"
                 >
                   +44 20 7346 0250
                 </a>
@@ -102,7 +102,7 @@ export function ContactSection() {
               <p>
                 <a
                   href="mailto:hello@cantra.care"
-                  className="font-serif font-bold text-base sm:text-lg text-[#0B4F43] hover:underline"
+                  className="  text-sm sm:text-base text-primary hover:underline"
                 >
                   hello@cantra.care
                 </a>
@@ -115,24 +115,24 @@ export function ContactSection() {
             <div className="bg-white rounded-[28px] sm:rounded-[32px] p-7 sm:p-10 lg:p-12 shadow-[0_12px_40px_rgba(11,79,67,0.06)] border border-[#465C59]/10">
               {/* Form Title */}
               <div className="mb-6 sm:mb-8">
-                <h3 className="text-2xl sm:text-3xl font-bold font-serif text-[#0B4F43] tracking-tight">
+                <h3 className="text-2xl sm:text-3xl lg:text[54px] font-serif text-primary tracking-tight">
                   Request a demo
                 </h3>
-                <p className="text-xs sm:text-sm text-[#465C59] mt-1.5">
+                <p className="text-sm sm:text-base text-primary mt-1.5">
                   Tell us a little about your care home.
                 </p>
               </div>
 
               {formSubmitted ? (
                 <div className="py-12 px-6 rounded-2xl bg-[#EFF3F3]/60 text-center space-y-4">
-                  <div className="w-14 h-14 rounded-full bg-[#0B4F43]/10 text-[#0B4F43] flex items-center justify-center mx-auto">
-                    <CheckCircle2 className="w-8 h-8 text-[#0B4F43]" />
+                  <div className="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mx-auto">
+                    <CheckCircle2 className="w-8 h-8 text-primary" />
                   </div>
-                  <h4 className="text-2xl font-bold font-serif text-[#0B4F43]">
+                  <h4 className="text-2xl font-bold font-serif text-primary">
                     Demo Request Received
                   </h4>
-                  <p className="text-xs sm:text-sm text-[#465C59] max-w-md mx-auto leading-relaxed">
-                    Thank you, <span className="font-semibold text-[#0B4F43]">{formData.fullName || "there"}</span>. Our care specialist team will review your requirements and reach out to <span className="font-semibold text-[#0B4F43]">{formData.workEmail || "your email"}</span> during business hours.
+                  <p className="text-sm sm:text-base text-primary max-w-md mx-auto leading-relaxed">
+                    Thank you, <span className="font-semibold text-primary">{formData.fullName || "there"}</span>. Our care specialist team will review your requirements and reach out to <span className="font-semibold text-primary">{formData.workEmail || "your email"}</span> during business hours.
                   </p>
                   <button
                     type="button"
@@ -148,7 +148,7 @@ export function ContactSection() {
                         message: "",
                       });
                     }}
-                    className="inline-block mt-4 text-xs font-bold uppercase tracking-wider text-[#0B4F43] underline hover:text-[#13695A] cursor-pointer"
+                    className="inline-block mt-4 text-xs font-bold uppercase tracking-wider text-primary underline hover:text-[#13695A] cursor-pointer"
                   >
                     Send another inquiry
                   </button>
@@ -160,7 +160,7 @@ export function ContactSection() {
                     <div>
                       <label
                         htmlFor="fullName"
-                        className="block text-xs font-semibold text-[#0B4F43] mb-1.5"
+                        className="block text-xs font-semibold text-primary mb-1.5"
                       >
                         Full name
                       </label>
@@ -175,14 +175,14 @@ export function ContactSection() {
                         onChange={(e) =>
                           setFormData({ ...formData, fullName: e.target.value })
                         }
-                        className="w-full  border border-[#465C59]/20 rounded-xl px-4 py-3 text-sm text-[#0B4F43] placeholder:text-[#465C59]/40 focus:outline-none focus:ring-2 focus:ring-[#0B4F43]/20 focus:border-[#0B4F43] transition-all"
+                        className="w-full  border border-[#465C59]/20 rounded-xl px-4 py-3 text-sm text-primary placeholder:text-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all"
                       />
                     </div>
 
                     <div>
                       <label
                         htmlFor="workEmail"
-                        className="block text-xs font-semibold text-[#0B4F43] mb-1.5"
+                        className="block text-xs font-semibold text-primary mb-1.5"
                       >
                         Work email
                       </label>
@@ -197,7 +197,7 @@ export function ContactSection() {
                         onChange={(e) =>
                           setFormData({ ...formData, workEmail: e.target.value })
                         }
-                        className="w-full  border border-[#465C59]/20 rounded-xl px-4 py-3 text-sm text-[#0B4F43] placeholder:text-[#465C59]/40 focus:outline-none focus:ring-2 focus:ring-[#0B4F43]/20 focus:border-[#0B4F43] transition-all"
+                        className="w-full  border border-[#465C59]/20 rounded-xl px-4 py-3 text-sm text-primary placeholder:text-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all"
                       />
                     </div>
                   </div>
@@ -207,7 +207,7 @@ export function ContactSection() {
                     <div>
                       <label
                         htmlFor="organisation"
-                        className="block text-xs font-semibold text-[#0B4F43] mb-1.5"
+                        className="block text-xs font-semibold text-primary mb-1.5"
                       >
                         Organisation
                       </label>
@@ -222,7 +222,7 @@ export function ContactSection() {
                         onChange={(e) =>
                           setFormData({ ...formData, organisation: e.target.value })
                         }
-                        className="w-full  border border-[#465C59]/20 rounded-xl px-4 py-3 text-sm text-[#0B4F43] placeholder:text-[#465C59]/40 focus:outline-none focus:ring-2 focus:ring-[#0B4F43]/20 focus:border-[#0B4F43] transition-all"
+                        className="w-full  border border-[#465C59]/20 rounded-xl px-4 py-3 text-sm text-primary placeholder:text-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all"
                       />
                     </div>
 
@@ -230,11 +230,11 @@ export function ContactSection() {
                       <div className="flex justify-between items-center mb-1.5">
                         <label
                           htmlFor="phone"
-                          className="text-xs font-semibold text-[#0B4F43]"
+                          className="text-xs font-semibold text-primary"
                         >
                           Phone number
                         </label>
-                        <span className="text-[11px] text-[#465C59]/60">Optional</span>
+
                       </div>
                       <input
                         id="phone"
@@ -246,7 +246,7 @@ export function ContactSection() {
                         onChange={(e) =>
                           setFormData({ ...formData, phone: e.target.value })
                         }
-                        className="w-full  border border-[#465C59]/20 rounded-xl px-4 py-3 text-sm text-[#0B4F43] placeholder:text-[#465C59]/40 focus:outline-none focus:ring-2 focus:ring-[#0B4F43]/20 focus:border-[#0B4F43] transition-all"
+                        className="w-full  border border-[#465C59]/20 rounded-xl px-4 py-3 text-sm text-primary placeholder:text-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all"
                       />
                     </div>
                   </div>
@@ -256,7 +256,7 @@ export function ContactSection() {
                     <div>
                       <label
                         htmlFor="careSetting"
-                        className="block text-xs font-semibold text-[#0B4F43] mb-1.5"
+                        className="block text-xs font-semibold text-primary mb-1.5"
                       >
                         Care setting
                       </label>
@@ -268,7 +268,7 @@ export function ContactSection() {
                           onChange={(e) =>
                             setFormData({ ...formData, careSetting: e.target.value })
                           }
-                          className="w-full appearance-none  border border-[#465C59]/20 rounded-xl px-4 py-3 text-sm text-[#0B4F43] focus:outline-none focus:ring-2 focus:ring-[#0B4F43]/20 focus:border-[#0B4F43] transition-all cursor-pointer pr-10"
+                          className="w-full appearance-none  border border-[#465C59]/20 rounded-xl px-4 py-3 text-sm text-primary focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all cursor-pointer pr-10"
                         >
                           <option value="">Select a setting</option>
                           <option value="Residential care home">Residential care home</option>
@@ -279,14 +279,14 @@ export function ContactSection() {
                           <option value="Care group / Multi-site">Care group / Multi-site</option>
                           <option value="Other">Other</option>
                         </select>
-                        <ChevronDown className="w-4 h-4 text-[#465C59]/70 absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+                        <ChevronDown className="w-4 h-4 text-primary/70 absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
                       </div>
                     </div>
 
                     <div>
                       <label
                         htmlFor="areaOfInterest"
-                        className="block text-xs font-semibold text-[#0B4F43] mb-1.5"
+                        className="block text-xs font-semibold text-primary mb-1.5"
                       >
                         Area of interest
                       </label>
@@ -298,7 +298,7 @@ export function ContactSection() {
                           onChange={(e) =>
                             setFormData({ ...formData, areaOfInterest: e.target.value })
                           }
-                          className="w-full appearance-none  border border-[#465C59]/20 rounded-xl px-4 py-3 text-sm text-[#0B4F43] focus:outline-none focus:ring-2 focus:ring-[#0B4F43]/20 focus:border-[#0B4F43] transition-all cursor-pointer pr-10"
+                          className="w-full appearance-none  border border-[#465C59]/20 rounded-xl px-4 py-3 text-sm text-primary focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all cursor-pointer pr-10"
                         >
                           <option value="">Select a service</option>
                           <option value="Full platform">Full platform</option>
@@ -308,7 +308,7 @@ export function ContactSection() {
                           <option value="CQC Compliance & Audits">CQC Compliance & Audits</option>
                           <option value="Resident & Family Portal">Resident & Family Portal</option>
                         </select>
-                        <ChevronDown className="w-4 h-4 text-[#465C59]/70 absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+                        <ChevronDown className="w-4 h-4 text-primary/70 absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
                       </div>
                     </div>
                   </div>
@@ -317,7 +317,7 @@ export function ContactSection() {
                   <div>
                     <label
                       htmlFor="message"
-                      className="block text-xs font-semibold text-[#0B4F43] mb-1.5"
+                      className="block text-xs font-semibold text-primary mb-1.5"
                     >
                       How can we help?
                     </label>
@@ -331,19 +331,19 @@ export function ContactSection() {
                       onChange={(e) =>
                         setFormData({ ...formData, message: e.target.value })
                       }
-                      className="w-full  border border-[#465C59]/20 rounded-xl p-4 text-sm text-[#0B4F43] placeholder:text-[#465C59]/40 focus:outline-none focus:ring-2 focus:ring-[#0B4F43]/20 focus:border-[#0B4F43] resize-none transition-all"
+                      className="w-full  border border-[#465C59]/20 rounded-xl p-4 text-sm text-primary placeholder:text-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary resize-none transition-all"
                     />
                   </div>
 
                   {/* Form Footer Row */}
                   <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
-                    <p className="text-[11px] sm:text-xs text-[#465C59]/80 leading-relaxed text-center sm:text-left">
+                    <p className="text-sm sm:text-base sm:text-xs text-primary/80 leading-relaxed text-center sm:text-left">
                       We’ll only use your details to respond to this enquiry. Submitting opens your email app.
                     </p>
 
                     <button
                       type="submit"
-                      className="w-full sm:w-auto px-7 py-3.5 rounded-full bg-[#0B4F43] hover:bg-[#13695A] text-white text-sm font-semibold transition-all duration-200 flex items-center justify-center gap-1.5 cursor-pointer shadow-md hover:shadow-lg shrink-0"
+                      className="w-full sm:w-auto px-7 py-3.5 rounded-full bg-primary hover:bg-[#13695A] text-white text-sm font-semibold transition-all duration-200 flex items-center justify-center gap-1.5 cursor-pointer shadow-md hover:shadow-lg shrink-0"
                     >
                       <span>Request a demo</span>
                       <ArrowUpRight className="w-4 h-4" />
