@@ -1,29 +1,37 @@
 import { ImageResponse } from "next/og";
+import fs from "fs";
+import path from "path";
 
-export const size = {
-  width: 32,
-  height: 32,
-};
+export const size = { width: 32, height: 32 };
 export const contentType = "image/png";
 
 export default function Icon() {
+  const filePath = path.join(process.cwd(), "public", "logos", "logo-mark-primary.png");
+  const fileData = fs.readFileSync(filePath);
+  const base64 = `data:image/png;base64,${fileData.toString("base64")}`;
+
   return new ImageResponse(
     (
       <div
         style={{
-          fontSize: 20,
-          background: "linear-gradient(135deg, #3b82f6 0%, #6366f1 100%)",
           width: "100%",
           height: "100%",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          color: "white",
-          borderRadius: "8px",
-          fontWeight: 800,
+          background: "transparent",
         }}
       >
-        C
+        <img
+          src={base64}
+          width="32"
+          height="32"
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "contain",
+          }}
+        />
       </div>
     ),
     {
