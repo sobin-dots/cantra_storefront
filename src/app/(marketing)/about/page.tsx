@@ -242,15 +242,26 @@ export default function AboutPage() {
       </section>
 
       {/* OUR PURPOSE */}
-      <section className="py-24 lg:py-32 bg-[#F6F4EB]">
+      <section className="py-24 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
             
-            <div className="w-full lg:w-1/2">
-               <div className="aspect-[4/3] bg-white rounded-[32px] overflow-hidden border border-[#0A4033]/10 relative shadow-lg">
-                 <div className="absolute inset-0 bg-[#E7EFEA] flex flex-col items-center justify-center text-center p-8">
-                   <span className="text-[#0A4033]/40 font-mono text-sm mb-4">Image Placeholder</span>
-                   <p className="text-[#0A4033]/60 font-serif font-bold text-2xl italic">Care stays personal</p>
+            <div className="w-full lg:w-1/2 relative lg:pr-8">
+               {/* Background Shape */}
+               <div className="absolute top-0 left-0 w-[92%] h-[96%] bg-[#F6F8F8] border border-[#0A4033]/5 rounded-tl-[48px] rounded-br-[48px] rounded-tr-xl rounded-bl-xl z-0" />
+               
+               {/* Image Container */}
+               <div className="relative z-10 pt-6 pl-6 sm:pt-8 sm:pl-8 pb-4">
+                 <div className="aspect-[4/5] sm:aspect-square w-full rounded-tl-[40px] rounded-br-[40px] rounded-tr-xl rounded-bl-xl overflow-hidden shadow-lg border border-[#0A4033]/5">
+                   <img 
+                     src="/images/care-community.webp" 
+                     alt="Care community" 
+                     className="w-full h-full object-cover"
+                   />
+                 </div>
+                 {/* Floating Badge */}
+                 <div className="absolute bottom-10 right-0 sm:right-6 lg:-right-4 z-20 bg-[#D4E9C1] text-[#0A4033] px-6 py-2.5 rounded-full text-[10px] font-bold uppercase tracking-[0.2em] shadow-md border border-[#0A4033]/5">
+                   Care stays personal
                  </div>
                </div>
             </div>
@@ -260,23 +271,24 @@ export default function AboutPage() {
                 <span className="w-8 h-[1px] bg-[#0A4033]/30" />
                 Our purpose
               </div>
-              <h2 className="text-4xl lg:text-5xl font-bold font-serif leading-tight text-[#0A4033] mb-8">
-                More clarity for teams. <br />
-                <span className="italic font-normal text-[#13695A]">More space for care.</span>
+              <h2 className="text-4xl lg:text-5xl font-bold font-serif leading-[1.1] text-[#0A4033] mb-6">
+                More clarity for <br className="hidden sm:block" />
+                teams. <span className="italic font-normal text-[#13695A]">More <br className="hidden sm:block" />
+                space for care.</span>
               </h2>
-              <p className="text-lg text-[#0A4033]/70 leading-relaxed mb-10">
+              <p className="text-sm sm:text-base text-[#0A4033]/70 leading-relaxed mb-10 max-w-lg">
                 Good care depends on people, judgement and trust. Our purpose is to remove avoidable friction around that work, helping teams spend less time chasing information and more time delivering attentive, person-centred care.
               </p>
 
-              <ul className="space-y-4">
+              <ul className="flex flex-col w-full border-t border-[#0A4033]/10 max-w-lg">
                 {[
                   "Keep important information visible",
                   "Connect responsibilities across the team",
                   "Support thoughtful, informed decisions"
                 ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-4 text-[#0A4033] font-medium bg-white p-4 rounded-2xl border border-[#0A4033]/5 shadow-sm">
-                    <span className="w-8 h-8 rounded-full bg-[#E7EFEA] text-[#13695A] flex items-center justify-center text-xs font-bold shrink-0">0{i + 1}</span>
-                    {item}
+                  <li key={i} className="flex items-center gap-6 py-5 border-b border-[#0A4033]/10 group">
+                    <span className="text-[10px] sm:text-xs font-mono font-bold text-[#0A4033]/30">0{i + 1}</span>
+                    <span className="text-[#0A4033]/90 text-sm font-medium">{item}</span>
                   </li>
                 ))}
               </ul>
