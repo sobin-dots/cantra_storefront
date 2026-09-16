@@ -247,12 +247,9 @@ export default function AboutPage() {
           <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
             
             <div className="w-full lg:w-1/2 relative lg:pr-8">
-               {/* Background Shape */}
-               <div className="absolute top-0 left-0 w-[92%] h-[96%] bg-[#F6F8F8] border border-[#0A4033]/5 rounded-tl-[48px] rounded-br-[48px] rounded-tr-xl rounded-bl-xl z-0" />
-               
                {/* Image Container */}
-               <div className="relative z-10 pt-6 pl-6 sm:pt-8 sm:pl-8 pb-4">
-                 <div className="aspect-[4/5] sm:aspect-square w-full rounded-tl-[40px] rounded-br-[40px] rounded-tr-xl rounded-bl-xl overflow-hidden shadow-lg border border-[#0A4033]/5">
+               <div className="relative z-10">
+                 <div className="aspect-[4/5] sm:aspect-square w-full overflow-hidden shadow-lg">
                    <img 
                      src="/images/care-community.webp" 
                      alt="Care community" 
@@ -260,7 +257,7 @@ export default function AboutPage() {
                    />
                  </div>
                  {/* Floating Badge */}
-                 <div className="absolute bottom-10 right-0 sm:right-6 lg:-right-4 z-20 bg-[#D4E9C1] text-[#0A4033] px-6 py-2.5 rounded-full text-[10px] font-bold uppercase tracking-[0.2em] shadow-md border border-[#0A4033]/5">
+                 <div className="absolute bottom-6 right-0 sm:-right-4 lg:-right-8 z-20 bg-[#D4E9C1] text-[#0A4033] px-6 py-2.5 rounded-full text-[10px] font-bold uppercase tracking-[0.2em] shadow-md border border-[#0A4033]/5">
                    Care stays personal
                  </div>
                </div>
