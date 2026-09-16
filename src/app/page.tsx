@@ -57,8 +57,7 @@ export default function HomePage() {
       {/* 10. CTA Banner Section */}
       {/* <CtaSection /> */}
 
-      {/* 11. Contact & Demo Request Section */}
-      <ContactSection />
+
 
       {/* 12. Site Footer */}
       <SiteFooter />

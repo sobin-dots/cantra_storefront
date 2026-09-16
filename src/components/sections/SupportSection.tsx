@@ -20,10 +20,9 @@ export function SupportSection() {
             {/* Main Headline */}
             <h2
               id="support-heading"
-              className="text-3xl sm:text-4xl lg:text-5xl font-bold font-serif text-white tracking-tight leading-[1.18]"
+              className="text-4xl sm:text-5xl lg:text-[54px] font-normal font-serif text-white tracking-tight leading-[1.12]"
             >
-              Built to help your team{" "}
-              <span className="italic font-serif font-normal text-white">do its best work.</span>
+              Built to help your team do its best work.
             </h2>
 
             {/* Subtitle */}
@@ -33,7 +32,7 @@ export function SupportSection() {
           </div>
 
           {/* Asymmetrical 2-Column Bento Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-stretch">
             {/* Left Column: Card 01 - Large Vertical Showcase Card */}
             <div className="lg:col-span-6 flex">
               <article className="group bg-[#13695A] rounded-3xl p-6 sm:p-8 border border-white/15 shadow-xl flex flex-col justify-between w-full hover:border-white/30 transition-all duration-300">
@@ -52,10 +51,10 @@ export function SupportSection() {
                   <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-surface/70 block">
                     Care stays personal
                   </span>
-                  <h3 className="text-2xl sm:text-3xl font-bold font-serif text-white leading-snug">
+                  <h3 className="text-2xl sm:text-3xl  font-serif text-white leading-snug">
                     Person-centred by design
                   </h3>
-                  <p className="text-xs sm:text-sm text-surface/90 leading-relaxed max-w-md pt-1">
+                  <p className="text-sm sm:text-base text-surface/90 leading-relaxed max-w-md pt-1">
                     Keep each resident’s needs, preferences and care at the centre of the workflow.
                   </p>
                 </div>
@@ -63,17 +62,17 @@ export function SupportSection() {
             </div>
 
             {/* Right Column: Stacked 2 Horizontal Cards (02 & 03) */}
-            <div className="lg:col-span-6 flex flex-col gap-6 justify-between">
+            <div className="lg:col-span-6 flex flex-col gap-8 justify-between">
               {/* Card 02: Made for Frontline Teams */}
               <article className="group bg-[#13695A] rounded-3xl p-6 sm:p-7 border border-white/15 shadow-xl flex flex-col sm:flex-row items-center gap-6 hover:border-white/30 transition-all duration-300 flex-1">
                 <div className="flex-1 space-y-2 text-left w-full sm:w-auto">
-                  <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-surface/70 block">
+                  <span className="text-[11px]  uppercase tracking-[0.18em] text-surface/70 block">
                     Made for the day-to-day
                   </span>
-                  <h3 className="text-xl sm:text-2xl font-bold font-serif text-white leading-snug">
+                  <h3 className="text-2xl sm:text-3xl  font-serif text-white leading-snug">
                     Made for frontline teams
                   </h3>
-                  <p className="text-xs sm:text-sm text-surface/90 leading-relaxed pt-1">
+                  <p className="text-sm sm:text-base text-surface/90 leading-relaxed pt-1">
                     A clear, practical experience built around the realities of everyday work.
                   </p>
                 </div>
@@ -93,10 +92,10 @@ export function SupportSection() {
                   <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-surface/70 block">
                     Important records, in view
                   </span>
-                  <h3 className="text-xl sm:text-2xl font-bold font-serif text-white leading-snug">
+                  <h3 className="text-2xl sm:text-3xl font-serif text-white leading-snug">
                     Compliance confidence
                   </h3>
-                  <p className="text-xs sm:text-sm text-surface/90 leading-relaxed pt-1">
+                  <p className="text-sm sm:text-base text-surface/90 leading-relaxed pt-1">
                     Keep important information structured, visible and easier to review.
                   </p>
                 </div>

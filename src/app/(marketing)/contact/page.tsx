@@ -30,11 +30,11 @@ export default function ContactPage() {
             <div className="flex justify-center mb-6">
               <Breadcrumbs items={breadcrumbItems} theme="light" />
             </div>
-            
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-serif text-[#0B4F43] tracking-tight mb-6">
-              Get in <span className="italic font-normal text-[#13695A]">touch</span>
+
+            <h1 className="text-4xl sm:text-5xl lg:text-[54px] font-bold font-serif text-primary tracking-tight mb-6">
+              Get in touch
             </h1>
-            <p className="text-base sm:text-lg text-[#465C59] leading-relaxed">
+            <p className="text-sm sm:text-base leading-relaxed">
               We're here to help you transform your care management. Reach out to our team with any questions, support requests, or to schedule a personalized demonstration.
             </p>
           </div>

@@ -33,7 +33,7 @@ export function Navbar() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled
-          ? "bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80 py-3.5 shadow-xl shadow-black/20"
+          ? "bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80 py-3.5 "
           : "bg-transparent py-5"
       )}
     >
@@ -42,13 +42,13 @@ export function Navbar() {
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center group focus:outline-none focus:ring-2 focus:ring-[#0B4F43] rounded-lg p-1"
+            className="flex items-center group focus:outline-none   p-1"
             aria-label="Cantra Care home"
           >
             <img
               src="/logos/logo-primary.png"
               alt="Cantra Care"
-              className="h-8 sm:h-9 w-auto object-contain"
+              className="h-12 sm:h-14 w-auto object-contain"
             />
           </Link>
 
@@ -63,7 +63,7 @@ export function Navbar() {
                     className={cn(
                       "px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 block",
                       isActive
-                        ? "text-white bg-blue-600/20 border border-blue-500/30 shadow-sm"
+                        ? "text-white bg-blue-600/20 border border-blue-500/30 "
                         : "text-slate-300 hover:text-white hover:bg-slate-800/60"
                     )}
                     aria-current={isActive ? "page" : undefined}
@@ -108,7 +108,7 @@ export function Navbar() {
 
         {/* Mobile Dropdown Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden mt-4 pt-4 pb-6 px-4 bg-slate-950/95 backdrop-blur-xl rounded-2xl border border-slate-800 shadow-2xl space-y-4">
+          <div className="md:hidden mt-4 pt-4 pb-6 px-4 bg-slate-950/95 backdrop-blur-xl rounded-2xl border border-slate-800  space-y-4">
             <div className="flex items-center gap-2 px-2 py-1 text-xs text-blue-400 font-semibold uppercase tracking-wider">
               <Sparkles className="w-3.5 h-3.5" />
               Navigation

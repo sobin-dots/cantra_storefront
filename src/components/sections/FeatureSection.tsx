@@ -40,18 +40,17 @@ export function FeatureSection() {
         {/* Main Asymmetrical Showcase Container */}
         <div className="bg-primary rounded-2xl  p-8 sm:p-12 lg:p-14 shadow-xl grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
           {/* Left Column: Index, Headline, Copy, Checklist */}
-          <div className="lg:col-span-5 space-y-6">
+          <div className="lg:col-span-6 space-y-6">
             <span className="text-xs font-mono font-medium uppercase tracking-[0.2em] text-surface/70 block">
               01 / Live overview
             </span>
 
-            <h3 className="text-3xl sm:text-4xl lg:text-[40px] font-bold font-serif text-white tracking-tight leading-[1.15]">
-              See what needs <br />
-              attention, while <br />
-              it still matters.
+            <h3 className="text-3xl sm:text-4xl lg:text-[40px] font-regular font-serif text-white tracking-tight leading-[1.15]">
+              See what needs attention,
+              while it still matters.
             </h3>
 
-            <p className="text-sm sm:text-base text-surface/80 leading-relaxed max-w-md">
+            <p className="text-sm sm:text-base    text-surface/80 leading-relaxed ">
               Bring current activity, care priorities and operational progress into one useful view—so your team can act with confidence.
             </p>
 
@@ -60,17 +59,17 @@ export function FeatureSection() {
               {checklistItems.map((item) => (
                 <div
                   key={item.num}
-                  className="py-3.5 flex items-center gap-4 text-sm font-semibold text-white border-b border-white/15"
+                  className="py-3.5 flex items-center gap-4 text-sm sm:text-base    font-regular text-white border-b border-white/15"
                 >
-                  <span className="text-xs font-mono text-surface/70 w-5">{item.num}</span>
-                  <span>{item.text}</span>
+                  <span className="    font-mono text-surface/70 w-5">{item.num}</span>
+                  <span >{item.text}</span>
                 </div>
               ))}
             </div>
           </div>
 
           {/* Right Column: Operational Overview Graphic (Hidden on Mobile) */}
-          <div className="hidden lg:flex lg:col-span-7 items-center justify-center">
+          <div className="hidden lg:flex lg:col-span-6 items-center justify-center">
             <img
               src="/Group 21.png"
               alt="Cantra Care Operational Overview and Live Care Evidence"

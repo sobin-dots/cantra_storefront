@@ -43,7 +43,7 @@ export default function RootLayout({
         <JsonLd data={organizationSchema} />
         <JsonLd data={webSiteSchema} />
       </head>
-      <body className="bg-[#EFF3F3] text-[#465C59] min-h-screen flex flex-col antialiased selection:bg-[#0B4F43] selection:text-[#EFF3F3]">
+      <body className="bg-[#EFF3F3] text-black min-h-screen flex flex-col antialiased selection:bg-[#0B4F43] selection:text-[#EFF3F3]">
         {/* Skip Navigation Link for Accessibility & SEO */}
         <a href="#main-content" className="skip-nav">
           Skip to main content

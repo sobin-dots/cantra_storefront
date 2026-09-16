@@ -75,10 +75,10 @@ export function PlatformSection() {
 
               {/* Bottom Area: Title + Description */}
               <div className="space-y-3 pt-12 sm:pt-14">
-                <h3 className="text-xl sm:text-[22px] font-bold leading-relaxed text-primary group-hover:text-primary-hover transition-colors leading-snug font-serif">
+                <h3 className="text-xl sm:text-2xl font-regular leading-relaxed text-primary group-hover:text-primary-hover transition-colors leading-snug font-serif">
                   {card.title}
                 </h3>
-                <p className="text-[13px] sm:text-sm text-body leading-relaxed">
+                <p className="text-sm sm:text-base   leading-relaxed">
                   {card.desc}
                 </p>
               </div>

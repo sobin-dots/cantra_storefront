@@ -42,9 +42,9 @@ export function RolesSection() {
               id="roles-heading"
               className="text-4xl sm:text-5xl lg:text-[54px] font-normal font-serif text-primary tracking-tight leading-[1.12]"
             >
-              The right<br />
-              view for <span className="italic font-serif font-normal text-primary">every</span><br />
-              <span className="italic font-serif font-normal text-primary">responsibility.</span>
+              The right
+              view for every
+              responsibility.
             </h2>
 
             {/* Explainer Subtitle */}
@@ -61,13 +61,13 @@ export function RolesSection() {
                   key={item.idx}
                   className="py-3.5 sm:py-4 flex items-center justify-between border-b border-border-subtle gap-4"
                 >
-                  <span className="text-xs sm:text-sm font-semibold text-body/80 w-28 sm:w-36 shrink-0">
+                  <span className="text-sm sm:text-base font-semibold text-body/80 w-28 sm:w-36 shrink-0">
                     {item.role}
                   </span>
-                  <span className="text-sm sm:text-base font-bold font-serif text-primary flex-1">
+                  <span className="text-sm sm:text-base font-semibold text-primary flex-1">
                     {item.desc}
                   </span>
-                  <div className="w-6 h-6 rounded-full border border-border flex items-center justify-center text-[10px] font-mono text-body/70 shrink-0">
+                  <div className="w-6 h-6 rounded-full border border-border flex items-center justify-center text-sm font-mono text-body/70 shrink-0">
                     {item.idx}
                   </div>
                 </div>

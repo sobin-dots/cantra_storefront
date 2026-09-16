@@ -52,7 +52,7 @@ export function EmarSection() {
             </h2>
 
             {/* Explainer Subtitle */}
-            <p className="text-sm sm:text-base text-body leading-relaxed max-w-lg">
+            <p className="text-sm sm:text-base leading-relaxed max-w-lg">
               See what is due, what has been administered and what needs attention—without separating medication records from the rest of the care journey.
             </p>
 
@@ -63,10 +63,10 @@ export function EmarSection() {
                   key={item.title}
                   className="py-4 flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6 border-b border-border-subtle"
                 >
-                  <strong className="text-sm sm:text-base font-bold text-primary w-32 sm:w-36 shrink-0">
+                  <strong className="text-sm sm:text-base font-semibold text-primary w-32 sm:w-36 shrink-0">
                     {item.title}
                   </strong>
-                  <span className="text-xs sm:text-sm text-body">
+                  <span className="text-sm sm:text-base text-body">
                     {item.desc}
                   </span>
                 </div>

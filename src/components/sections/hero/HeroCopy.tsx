@@ -13,7 +13,7 @@ export function HeroCopy() {
       </h1>
 
       {/* Subtitle */}
-      <p className="text-base text-body leading-relaxed max-w-lg">
+      <p className=" text-sm sm:text-base    leading-relaxed ">
         Live or on your terms – Cantra Care connects care routines, medication records, and team collaboration for frontline care homes.
       </p>
 
@@ -21,13 +21,13 @@ export function HeroCopy() {
       <div className="flex flex-wrap items-center gap-3 pt-2">
         <a
           href="#contact"
-          className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-primary hover:bg-primary-hover text-surface text-sm font-semibold shadow-md shadow-primary/15 transition-all duration-200"
+          className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-primary hover:bg-primary-hover text-surface text-sm font-semibold  shadow-primary/15 transition-all duration-200"
         >
           Book a demo
         </a>
         <a
           href="#platform"
-          className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-white hover:bg-surface text-primary text-sm font-semibold border border-border shadow-sm transition-all duration-200"
+          className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-surface hover:bg-white text-primary text-sm font-semibold border border-border  transition-all duration-200"
         >
           <span>Explore the platform</span>
           <MoveDown className="w-4 h-4 opacity-70" />
