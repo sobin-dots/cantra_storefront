@@ -58,43 +58,59 @@ export default function AboutPage() {
       </div>
 
       {/* WHO WE ARE / OUR STORY */}
-      <section id="our-story" className="py-24 lg:py-32 bg-white">
+      <section id="our-story" className="py-24 lg:py-32 bg-[#EFF3F3]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-24">
-            
-            <div className="max-w-lg lg:w-1/2">
+          
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 lg:mb-16 gap-6">
+            <div className="max-w-xl">
               <div className="flex items-center gap-4 text-[10px] font-bold uppercase tracking-[0.2em] text-[#0A4033]/60 mb-6">
                 <span className="w-8 h-[1px] bg-[#0A4033]/30" />
                 Who we are
               </div>
-              <h2 className="text-4xl lg:text-5xl font-bold font-serif leading-tight text-[#0A4033] mb-12">
-                We make complex care work feel <span className="italic font-normal text-[#13695A]">clearer.</span>
+              <h2 className="text-4xl lg:text-5xl font-bold font-serif leading-[1.15] text-[#0A4033]">
+                We make complex <br className="hidden sm:block" />
+                care work feel <span className="italic font-normal text-[#13695A]">clearer.</span>
               </h2>
+            </div>
+            <div className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#0A4033]/40 pb-2">
+              01 / Our story
+            </div>
+          </div>
 
-              <div className="bg-[#F6F4EB] p-8 rounded-3xl border border-[#0A4033]/5">
-                <span className="text-xs font-bold uppercase tracking-wider text-[#0A4033]/60 mb-4 block">Our belief</span>
-                <p className="text-lg font-serif text-[#0A4033] leading-relaxed">
-                  "Technology should support the judgement of care professionals—not get in its way."
-                </p>
+          <div className="flex flex-col lg:flex-row rounded-[32px] sm:rounded-[40px] overflow-hidden shadow-2xl border border-[#0A4033]/5">
+            {/* Left Dark Green Panel */}
+            <div className="w-full lg:w-2/5 bg-[#0A4033] p-10 sm:p-14 lg:p-16 relative flex flex-col justify-start min-h-[400px]">
+              <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/60 mb-16 block relative z-10">
+                Our belief
+              </span>
+              <p className="text-2xl sm:text-3xl lg:text-[32px] font-serif text-white leading-[1.3] relative z-10 pr-4">
+                Technology should support the judgement of care professionals—not get in its way.
+              </p>
+              {/* Giant quote mark watermark */}
+              <div className="absolute bottom-4 right-8 text-[200px] font-serif text-white/[0.04] leading-[0.5] select-none">
+                “
               </div>
             </div>
 
-            <div className="lg:w-1/2 pt-4 lg:pt-12">
-              <p className="text-xl text-[#0A4033] leading-relaxed mb-6 font-medium">
+            {/* Right White Panel */}
+            <div className="w-full lg:w-3/5 bg-white p-10 sm:p-14 lg:p-16 flex flex-col justify-center">
+              <p className="text-2xl sm:text-3xl font-serif text-[#0A4033] leading-[1.3] mb-8 lg:mb-10">
                 Cantra Care exists to give care teams a calmer, more connected way to manage the work around care.
               </p>
-              <p className="text-base text-[#0A4033]/70 leading-relaxed mb-10">
+              <p className="text-sm sm:text-base text-[#0A4033]/70 leading-relaxed mb-12">
                 We bring essential information into one practical view—from person-centred plans and e-MAR to staffing and reporting. The result is greater visibility for teams, without losing the human focus behind every record and decision.
               </p>
 
-              <div className="flex gap-3 flex-wrap">
-                <span className="px-4 py-2 bg-[#E7EFEA] text-[#13695A] rounded-full text-sm font-semibold border border-[#13695A]/10">Human-centred</span>
-                <span className="px-4 py-2 bg-[#E7EFEA] text-[#13695A] rounded-full text-sm font-semibold border border-[#13695A]/10">Practical</span>
-                <span className="px-4 py-2 bg-[#E7EFEA] text-[#13695A] rounded-full text-sm font-semibold border border-[#13695A]/10">Dependable</span>
+              <div className="border-t border-[#0A4033]/10 pt-8 mt-auto flex gap-3 flex-wrap">
+                {["Human-centred", "Practical", "Dependable"].map((badge) => (
+                  <span key={badge} className="px-5 py-2.5 bg-transparent text-[#0A4033]/70 rounded-full text-[11px] font-bold border border-[#0A4033]/15 tracking-wide">
+                    {badge}
+                  </span>
+                ))}
               </div>
             </div>
-
           </div>
+          
         </div>
       </section>
 
