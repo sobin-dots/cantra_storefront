@@ -4,6 +4,8 @@ import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { generateOrganizationSchema } from "@/lib/schema";
+import { HeroHeader } from "@/components/sections/hero/HeroHeader";
+import { SiteFooter } from "@/components/sections/SiteFooter";
 
 export const metadata = constructMetadata({
   title: "Contact Us & Request a Demo | Cantra Care",
@@ -20,13 +22,28 @@ export default function ContactPage() {
     <div className="bg-[#EFF3F3] text-[#465C59] min-h-screen selection:bg-[#0B4F43] selection:text-[#EFF3F3]">
       <JsonLd data={orgSchema} />
 
-      <div className="pt-28 pb-4">
+      <HeroHeader />
+
+      <div className="pt-8 md:pt-16 pb-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Breadcrumbs items={breadcrumbItems} />
+          <div className="text-center max-w-3xl mx-auto">
+            <div className="flex justify-center mb-6">
+              <Breadcrumbs items={breadcrumbItems} theme="light" />
+            </div>
+            
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-serif text-[#0B4F43] tracking-tight mb-6">
+              Get in <span className="italic font-normal text-[#13695A]">touch</span>
+            </h1>
+            <p className="text-base sm:text-lg text-[#465C59] leading-relaxed">
+              We're here to help you transform your care management. Reach out to our team with any questions, support requests, or to schedule a personalized demonstration.
+            </p>
+          </div>
         </div>
       </div>
 
       <ContactSection />
+
+      <SiteFooter />
     </div>
   );
 }
